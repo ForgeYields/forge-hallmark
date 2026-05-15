@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: Morpho kHYPE/USDC HyperEVM
+slug: morpho-khype-usdc-hyperevm
+chain: hyperevm
+strategy_type: '3'
+vault_target: fyUSDC
+assessment:
+  date: '2026-04-27'
+  methodology_version: v3.6
+grs: 4.78
+components:
+  protocol_risk: 2.22
+  asset_risk: 6.1
+  strategy_specific_risk: 6.2
+strategy_specific_criteria:
+  s1: 6
+  s2: 6
+  s3: 7
+  s4: 8
+  s5: 3
+dependencies:
+  protocols:
+    - morpho-blue
+  assets:
+    - usdc
+    - khype

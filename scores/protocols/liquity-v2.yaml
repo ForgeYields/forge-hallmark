@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Liquity V2
+slug: liquity-v2
+chains:
+  - ethereum
+category: cdp-stablecoin
+assessment:
+  date: '2026-04-17'
+  methodology_version: v3.4
+prs: 3.81
+criteria:
+  c1: 3
+  c2: 6
+  c3: 2
+  c4: 6.3
+  c5: 4
+  c6: 2

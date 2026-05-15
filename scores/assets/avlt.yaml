@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: AVLT
+slug: avlt
+chains:
+  - hyperevm
+issuer_protocol: altura-protocol
+asset_type: yield-accruing-stablecoin-wrapper-rwa-mixed
+assessment:
+  date: '2026-05-11'
+  methodology_version: v3.10
+ars: 6.3
+criteria:
+  a1: 6
+  a2: 7
+  a3: 6
+  a4: 7
+  a5: 4.5

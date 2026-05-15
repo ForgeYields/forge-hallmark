@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Reserve Protocol
+slug: reserve-protocol
+chains:
+  - ethereum
+  - base
+category: rtoken-platform-stablecoin-infrastructure
+assessment:
+  date: '2026-04-10'
+  methodology_version: v3.1
+prs: 3.24
+criteria:
+  c1: 2
+  c2: 5
+  c3: 4
+  c4: 3.4
+  c5: 5
+  c6: 2

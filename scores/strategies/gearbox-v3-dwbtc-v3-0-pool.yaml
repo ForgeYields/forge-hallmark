@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: Gearbox V3 dWBTC-V3-0 Pool (Ethereum)
+slug: gearbox-v3-dwbtc-v3-0-pool
+chain: ethereum
+strategy_type: '3'
+vault_target: fyWBTC
+assessment:
+  date: '2026-05-08'
+  methodology_version: v3.9
+grs: 4.41
+components:
+  protocol_risk: 4.24
+  asset_risk: 4.1
+  strategy_specific_risk: 4.75
+strategy_specific_criteria:
+  s1: 5
+  s2: 4
+  s3: 6
+  s4: 5
+  s5: 3
+dependencies:
+  protocols:
+    - gearbox-finance
+    - curve-finance
+    - stakedao
+  assets:
+    - wbtc
+    - cbbtc

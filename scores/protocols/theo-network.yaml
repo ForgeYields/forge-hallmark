@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Theo Network
+slug: theo-network
+chains:
+  - ethereum
+  - arbitrum
+  - base
+  - hyperevm
+category: rwa-institutional-t-bill-yield-infrastructure
+assessment:
+  date: '2026-04-27'
+  methodology_version: v3.6
+prs: 5.1
+criteria:
+  c1: 5
+  c2: 6
+  c3: 5
+  c4: 4.6
+  c5: 7
+  c6: 3

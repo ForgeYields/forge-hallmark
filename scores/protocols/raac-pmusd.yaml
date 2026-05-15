@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: RAAC / pmUSD
+slug: raac-pmusd
+chains:
+  - ethereum
+category: rwa-gold-backed-stablecoinfork
+assessment:
+  date: '2026-04-18'
+  methodology_version: v3.4
+prs: 6.44
+criteria:
+  c1: 7
+  c2: 6
+  c3: 9
+  c4: 4.2
+  c5: 7
+  c6: 4

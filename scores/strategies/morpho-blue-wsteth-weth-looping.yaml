@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: Morpho Blue wstETH/WETH Looping (Monad)
+slug: morpho-blue-wsteth-weth-looping
+chain: monad
+strategy_type: '1'
+vault_target: fyETH
+assessment:
+  date: '2026-05-06'
+  methodology_version: v3.6
+grs: 4.37
+components:
+  protocol_risk: 2.27
+  asset_risk: 5.5
+  strategy_specific_risk: 5.5
+strategy_specific_criteria:
+  s1: 4
+  s2: 6
+  s3: 6
+  s4: 7
+dependencies:
+  protocols:
+    - morpho-blue
+  assets:
+    - wsteth-monad
+    - weth-monad

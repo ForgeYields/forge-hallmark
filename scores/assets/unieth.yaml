@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: uniETH
+slug: unieth
+chains:
+  - ethereum
+issuer_protocol: bedrock
+asset_type: liquid-restaking-token-lrt
+assessment:
+  date: '2026-04-21'
+  methodology_version: v3.4
+ars: 5.5
+criteria:
+  a1: 4
+  a2: 4
+  a3: 8
+  a4: 5
+  a5: 7

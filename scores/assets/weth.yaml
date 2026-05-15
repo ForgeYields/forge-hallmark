@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: WETH
+slug: weth
+chains:
+  - ethereum
+issuer_protocol: ether-fi
+asset_type: native-wrapper
+assessment:
+  date: '2026-04-21'
+  methodology_version: v3.4
+ars: 1
+criteria:
+  a1: 1
+  a2: 1
+  a3: 1
+  a4: 1
+  a5: 1

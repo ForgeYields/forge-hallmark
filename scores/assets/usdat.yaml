@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: USDat
+slug: usdat
+chains:
+  - ethereum
+issuer_protocol: saturn-protocol
+asset_type: m0-extension-fiat-rwa-backed-stablecoin
+assessment:
+  date: '2026-05-08'
+  methodology_version: v3.9
+ars: 4.4
+criteria:
+  a1: 5
+  a2: 3.5
+  a3: 4.5
+  a4: 3.5
+  a5: 7

@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: SolvBTC
+slug: solvbtc
+chains:
+  - ethereum
+  - starknet
+issuer_protocol: solv-protocol
+asset_type: yield-bearing-btc-wrapper
+assessment:
+  date: '2026-04-21'
+  methodology_version: v3.4
+ars: 5.5
+criteria:
+  a1: 5
+  a2: 4
+  a3: 8
+  a4: 5
+  a5: 5

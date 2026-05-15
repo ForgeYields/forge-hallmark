@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Sierra Protocol
+slug: sierra-protocol
+chains:
+  - ethereum
+  - avalanche
+category: liquid-yield-token-rwa-plus-defi-yield-backed-yield-bearing-stablecoin
+assessment:
+  date: '2026-04-25'
+  methodology_version: v3.6
+prs: 7
+criteria:
+  c1: 8
+  c2: 8
+  c3: 9
+  c4: 4.5
+  c5: 6
+  c6: 6

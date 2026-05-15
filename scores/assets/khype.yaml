@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: kHYPE
+slug: khype
+chains:
+  - hyperevm
+issuer_protocol: kinetiq
+asset_type: lst
+assessment:
+  date: '2026-04-24'
+  methodology_version: v3.6
+ars: 5.6
+criteria:
+  a1: 6
+  a2: 7
+  a3: 5
+  a4: 5
+  a5: 4

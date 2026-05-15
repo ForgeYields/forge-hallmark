@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forgeyields.com/hallmark/schemas/asset.schema.json",
+  "title": "Hallmark Asset Risk Score",
+  "description": "Layer 2 — Asset Risk Score (ARS). Schema for /public/scores/assets/*.yaml. Contains numerical scores only; verdicts, caps, class labels, and rationale live in the private repo.",
+  "type": "object",
+  "required": [
+    "symbol",
+    "slug",
+    "chains",
+    "issuer_protocol",
+    "assessment",
+    "ars",
+    "criteria"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "symbol": {
+      "type": "string",
+      "description": "On-chain token symbol",
+      "examples": ["USDC", "USDat", "sUSDai", "wstETH"]
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "URL-safe identifier",
+      "examples": ["usdc", "usdat", "susdai"]
+    },
+    "chains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "minItems": 1,
+      "description": "Chains where the asset is deployed",
+      "examples": [["ethereum"], ["ethereum", "arbitrum", "base"]]
+    },
+    "issuer_protocol": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Slug of issuing protocol (cross-reference to /scores/protocols/{slug}.yaml)",
+      "examples": ["circle", "saturn", "usd-ai"]
+    },
+    "asset_type": {
+      "type": "string",
+      "description": "Optional taxonomy for asset family",
+      "examples": [
+        "fiat-backed-stablecoin",
+        "yield-bearing-stablecoin-wrapper",
+        "lst",
+        "lrt",
+        "synthetic-dollar",
+        "bridged-btc",
+        "tranche-token",
+        "rwa-backed"
+      ]
+    },
+    "assessment": {
+      "type": "object",
+      "required": ["date", "methodology_version"],
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "examples": ["2026-05-08"]
+        },
+        "methodology_version": {
+          "type": "string",
+          "pattern": "^v\\d+\\.\\d+$",
+          "examples": ["v3.10", "v3.7"]
+        }
+      }
+    },
+    "ars": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "Asset Risk Score, 1-10 scale (lower = lower risk)"
+    },
+    "criteria": {
+      "type": "object",
+      "required": ["a1", "a2", "a3", "a4", "a5"],
+      "additionalProperties": false,
+      "description": "Composition breakdown — A1 to A5 scores",
+      "properties": {
+        "a1": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Peg Mechanism (weight 20%)"
+        },
+        "a2": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Depeg History (weight 25%)"
+        },
+        "a3": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Liquidity Depth (weight 25%)"
+        },
+        "a4": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Collateral Backing (weight 20%)"
+        },
+        "a5": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Market Cap / Supply Concentration (weight 10%)"
+        }
+      }
+    }
+  }
+}

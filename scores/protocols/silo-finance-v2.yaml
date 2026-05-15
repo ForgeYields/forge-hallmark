@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Silo Finance V2
+slug: silo-finance-v2
+chains:
+  - ethereum
+  - arbitrum
+  - avalanche
+category: lending-isolated-markets
+assessment:
+  date: '2026-04-17'
+  methodology_version: v3.4
+prs: 4.21
+criteria:
+  c1: 3
+  c2: 9
+  c3: 3
+  c4: 5.3
+  c5: 4
+  c6: 3

@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Compound V3
+slug: compound-v3
+chains:
+  - ethereum
+category: lending-money-market
+assessment:
+  date: '2026-04-17'
+  methodology_version: v3.4
+prs: 2.5
+criteria:
+  c1: 3
+  c2: 1
+  c3: 3
+  c4: 2
+  c5: 3
+  c6: 2

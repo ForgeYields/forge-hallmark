@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: Balancer V3 LP msUSD-USDC (MainStreet)
+slug: balancer-v3-lp-msusd-usdc
+chain: ethereum
+strategy_type: 2A
+vault_target: fyUSDC
+assessment:
+  date: '2026-05-08'
+  methodology_version: v3.9
+grs: 5.24
+components:
+  protocol_risk: 7.2
+  asset_risk: 5.04
+  strategy_specific_risk: 3.65
+strategy_specific_criteria:
+  s1: 3
+  s2: 4
+  s3: 4
+  s4: 4
+dependencies:
+  protocols:
+    - balancer-v3
+    - mainstreet-finance
+  assets:
+    - msusdv2
+    - usdc

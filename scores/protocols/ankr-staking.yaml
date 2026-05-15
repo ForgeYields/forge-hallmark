@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Ankr Staking
+slug: ankr-staking
+chains:
+  - ethereum
+category: liquid-staking-node-infrastructure
+assessment:
+  date: '2026-04-17'
+  methodology_version: v3.4
+prs: 6.39
+criteria:
+  c1: 7
+  c2: 10
+  c3: 7
+  c4: 5.2
+  c5: 6
+  c6: 3

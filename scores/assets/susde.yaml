@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: sUSDe
+slug: susde
+chains:
+  - ethereum
+issuer_protocol: ethena
+asset_type: yield-accruing-stable-wrapper
+assessment:
+  date: '2026-04-21'
+  methodology_version: v3.4
+ars: 4.25
+criteria:
+  a1: 6
+  a2: 4
+  a3: 3
+  a4: 5
+  a5: 3

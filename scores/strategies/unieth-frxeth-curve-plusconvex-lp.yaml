@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: uniETH/frxETH Curve+Convex LP
+slug: unieth-frxeth-curve-plusconvex-lp
+chain: ethereum
+strategy_type: 2A
+vault_target: fyETH
+assessment:
+  date: '2026-04-22'
+  methodology_version: v3.4
+grs: 5.14
+components:
+  protocol_risk: 6.32
+  asset_risk: 5.38
+  strategy_specific_risk: 3.95
+strategy_specific_criteria:
+  s1: 4
+  s2: 5
+  s3: 3
+  s4: 3
+dependencies:
+  protocols:
+    - curve-finance
+    - convex-finance
+  assets:
+    - unieth
+    - frxeth

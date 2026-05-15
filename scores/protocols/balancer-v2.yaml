@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Balancer V2
+slug: balancer-v2
+chains:
+  - ethereum
+category: dex-generalized-amm
+assessment:
+  date: '2026-04-17'
+  methodology_version: v3.4
+prs: 5.72
+criteria:
+  c1: 6
+  c2: 10
+  c3: 4
+  c4: 6.6
+  c5: 6
+  c6: 2

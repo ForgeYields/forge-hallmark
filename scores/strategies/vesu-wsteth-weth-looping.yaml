@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: Vesu wstETH-WETH Looping (Starknet)
+slug: vesu-wsteth-weth-looping
+chain: starknet
+strategy_type: '1'
+vault_target: fyETH
+assessment:
+  date: '2026-04-22'
+  methodology_version: v3.4
+grs: 4.39
+components:
+  protocol_risk: 5.17
+  asset_risk: 3.2
+  strategy_specific_risk: 4.45
+strategy_specific_criteria:
+  s1: 3
+  s2: 4
+  s3: 6
+  s4: 6
+dependencies:
+  protocols:
+    - vesu
+  assets:
+    - wsteth
+    - weth

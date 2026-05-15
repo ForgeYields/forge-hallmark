@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: USD.AI
+slug: usd-ai
+chains:
+  - arbitrum
+  - base
+  - plasma
+category: rwa-lending-ai-infrastructure-backed-synthetic-dollar
+assessment:
+  date: '2026-05-11'
+  methodology_version: v3.10
+prs: 4.37
+criteria:
+  c1: 4
+  c2: 4
+  c3: 5
+  c4: 3.6
+  c5: 7
+  c6: 2

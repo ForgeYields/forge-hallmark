@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: Pendle LP-msY-30JUL2026
+slug: pendle-lp-msy-30jul2026
+chain: ethereum
+strategy_type: 2B
+vault_target: fyUSDC
+assessment:
+  date: '2026-04-26'
+  methodology_version: v3.6
+grs: 6.02
+components:
+  protocol_risk: 7.16
+  asset_risk: 5.8
+  strategy_specific_risk: 5.15
+strategy_specific_criteria:
+  s1: 4
+  s2: 6
+  s3: 6
+  s4: 5
+dependencies:
+  protocols:
+    - pendle
+    - mainstreet-finance
+  assets:
+    - msy

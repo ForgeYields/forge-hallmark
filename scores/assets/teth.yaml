@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: tETH
+slug: teth
+chains:
+  - ethereum
+issuer_protocol: treehouse
+asset_type: lst-wrapping-yield-vault
+assessment:
+  date: '2026-04-21'
+  methodology_version: v3.4
+ars: 5.15
+criteria:
+  a1: 5
+  a2: 4
+  a3: 7
+  a4: 4
+  a5: 6

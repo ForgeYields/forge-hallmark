@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: srUSDat
+slug: srusdat
+chains:
+  - ethereum
+issuer_protocol: strata
+asset_type: senior-tranche-stable-rwa-strc
+assessment:
+  date: '2026-05-08'
+  methodology_version: v3.9
+ars: 5.23
+criteria:
+  a1: 5
+  a2: 4
+  a3: 6.5
+  a4: 4
+  a5: 8

@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: Morpho LBTC/cbBTC Monad
+slug: morpho-lbtc-cbbtc-monad
+chain: monad
+strategy_type: '3'
+vault_target: fyWBTC
+assessment:
+  date: '2026-04-28'
+  methodology_version: v3.6
+grs: 4.59
+components:
+  protocol_risk: 2.27
+  asset_risk: 6.8
+  strategy_specific_risk: 5.25
+strategy_specific_criteria:
+  s1: 5
+  s2: 6
+  s3: 2
+  s4: 7
+  s5: 8
+dependencies:
+  protocols:
+    - morpho-blue
+  assets:
+    - cbbtc-monad
+    - lbtc-monad

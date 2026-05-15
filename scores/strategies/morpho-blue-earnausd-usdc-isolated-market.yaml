@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: Morpho Blue earnAUSD/USDC Isolated Market (Monad)
+slug: morpho-blue-earnausd-usdc-isolated-market
+chain: monad
+strategy_type: '3'
+vault_target: fyUSDC
+assessment:
+  date: '2026-05-07'
+  methodology_version: v3.7
+grs: 3.8
+components:
+  protocol_risk: 2.27
+  asset_risk: 2.5
+  strategy_specific_risk: 5.95
+strategy_specific_criteria:
+  s1: 5
+  s2: 6
+  s3: 6
+  s4: 7
+  s5: 7
+dependencies:
+  protocols:
+    - morpho-blue
+    - upshift
+    - agora-finance
+    - morpho-vaults-metamorpho
+  assets:
+    - usdc
+    - earnausd-monad
+    - ausd-monad

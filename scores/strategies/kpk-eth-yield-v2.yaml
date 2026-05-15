@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: kpk-eth-yield-v2
+slug: kpk-eth-yield-v2
+chain: ethereum
+strategy_type: '3'
+vault_target: fyETH
+assessment:
+  date: '2026-04-24'
+  methodology_version: v3.6
+grs: 3.36
+components:
+  protocol_risk: 2.99
+  asset_risk: 1
+  strategy_specific_risk: 5.15
+strategy_specific_criteria:
+  s1: 2
+  s2: 9
+  s3: 6
+  s4: 3
+  s5: 3
+dependencies:
+  protocols:
+    - morpho-vaults-metamorpho
+    - morpho-blue
+  assets:
+    - weth
+    - eth-plus
+    - weeth
+    - wsteth
+    - teth

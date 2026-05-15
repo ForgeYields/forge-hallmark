@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: YieldNest
+slug: yieldnest
+chains:
+  - ethereum
+category: yield-aggregator-restaking
+assessment:
+  date: '2026-04-10'
+  methodology_version: v3.1
+prs: 5.57
+criteria:
+  c1: 4
+  c2: 7
+  c3: 6
+  c4: 6.2
+  c5: 6
+  c6: 5

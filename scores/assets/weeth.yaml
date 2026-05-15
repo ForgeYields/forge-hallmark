@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: weETH
+slug: weeth
+chains:
+  - ethereum
+issuer_protocol: ether-fi
+asset_type: liquid-restaking-token-lrt-wrapper
+assessment:
+  date: '2026-04-21'
+  methodology_version: v3.4
+ars: 3.2
+criteria:
+  a1: 4
+  a2: 3
+  a3: 3
+  a4: 3
+  a5: 3

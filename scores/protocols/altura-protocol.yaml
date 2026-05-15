@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Altura Protocol
+slug: altura-protocol
+chains:
+  - hyperevm
+category: multi-strategy-stablecoin-yield-vault
+assessment:
+  date: '2026-05-11'
+  methodology_version: v3.9
+prs: 7.24
+criteria:
+  c1: 6
+  c2: 8
+  c3: 9
+  c4: 7.2
+  c5: 8
+  c6: 5

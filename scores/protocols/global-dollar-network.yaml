@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Global Dollar Network (Paxos USDG)
+slug: global-dollar-network
+chains:
+  - ethereum
+category: regulated-fiat-backed-stablecoin-centralised-stable-value-asset
+assessment:
+  date: '2026-04-30'
+  methodology_version: v3.6
+prs: 3.81
+criteria:
+  c1: 2
+  c2: 1
+  c3: 6
+  c4: 4.3
+  c5: 7
+  c6: 1

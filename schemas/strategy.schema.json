@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forgeyields.com/hallmark/schemas/strategy.schema.json",
+  "title": "Hallmark Strategy Risk Score",
+  "description": "Layer 3 — Global Risk Score (GRS) for a specific yield strategy. Schema for /public/scores/strategies/*.yaml. Contains numerical scores only; verdicts, caps, and rationale live in the private repo.",
+  "type": "object",
+  "required": [
+    "name",
+    "slug",
+    "chain",
+    "strategy_type",
+    "assessment",
+    "components",
+    "grs",
+    "strategy_specific_criteria",
+    "dependencies"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Human-readable strategy name",
+      "examples": [
+        "Pendle PT-USDat-27AUG2026",
+        "eUSDC-95 Euler V2",
+        "Convex Curve frxUSD/msUSD pool 510"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "URL-safe identifier",
+      "examples": ["pt-usdat-27aug2026", "eusdc-95-euler", "convex-curve-pool-510"]
+    },
+    "chain": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Chain where the strategy is deployed",
+      "examples": ["ethereum", "arbitrum", "base"]
+    },
+    "strategy_type": {
+      "type": "string",
+      "enum": ["1", "2A", "2B", "2C", "3"],
+      "description": "Strategy type per methodology: Type 1 (Looping), 2A (LP Classic), 2B (LP Pendle), 2C (Pendle PT bond-like), 3 (Lending)"
+    },
+    "vault_target": {
+      "type": "string",
+      "description": "Optional ForgeYields target vault for this strategy",
+      "examples": ["fyUSDC", "fyETH", "fyWBTC"]
+    },
+    "addresses": {
+      "type": "object",
+      "description": "On-chain addresses for resolver lookup",
+      "additionalProperties": false,
+      "properties": {
+        "market": { "type": "string", "description": "Market or pool address" },
+        "pt": { "type": "string", "description": "Pendle PT token address (Type 2C)" },
+        "sy": { "type": "string", "description": "Pendle SY token address" },
+        "yt": { "type": "string", "description": "Pendle YT token address" },
+        "vault": { "type": "string", "description": "Vault contract (Type 3)" },
+        "lp": { "type": "string", "description": "LP token (Type 2A)" },
+        "underlying": { "type": "string", "description": "Underlying asset address" }
+      }
+    },
+    "assessment": {
+      "type": "object",
+      "required": ["date", "methodology_version"],
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "examples": ["2026-05-11"]
+        },
+        "methodology_version": {
+          "type": "string",
+          "pattern": "^v\\d+\\.\\d+$",
+          "examples": ["v3.10", "v3.4"]
+        }
+      }
+    },
+    "grs": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "Global Risk Score, 1-10 scale (lower = lower risk)"
+    },
+    "components": {
+      "type": "object",
+      "required": ["protocol_risk", "asset_risk", "strategy_specific_risk"],
+      "additionalProperties": false,
+      "description": "Top-level GRS composition. GRS = 0.35*protocol_risk + 0.25*asset_risk + 0.40*strategy_specific_risk",
+      "properties": {
+        "protocol_risk": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Aggregate protocol risk (multi-protocol rule applied if N>1)"
+        },
+        "asset_risk": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Aggregate asset risk (paired-asset / tri-asset formula applied if multi-asset)"
+        },
+        "strategy_specific_risk": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Strategy-specific risk (S-factors weighted per strategy type)"
+        }
+      }
+    },
+    "strategy_specific_criteria": {
+      "type": "object",
+      "description": "S-factor breakdown. Keys depend on strategy_type. Type 1/2A/2B/2C use s1-s4. Type 3 uses s1-s5.",
+      "additionalProperties": false,
+      "properties": {
+        "s1": { "type": "number", "minimum": 1, "maximum": 10 },
+        "s2": { "type": "number", "minimum": 1, "maximum": 10 },
+        "s3": { "type": "number", "minimum": 1, "maximum": 10 },
+        "s4": { "type": "number", "minimum": 1, "maximum": 10 },
+        "s5": { "type": "number", "minimum": 1, "maximum": 10 }
+      },
+      "required": ["s1", "s2", "s3", "s4"]
+    },
+    "dependencies": {
+      "type": "object",
+      "required": ["protocols", "assets"],
+      "additionalProperties": false,
+      "description": "Cross-references to L1 protocols and L2 assets used by this strategy (slugs)",
+      "properties": {
+        "protocols": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "description": "Slugs of L1 protocols this strategy depends on",
+          "examples": [["pendle", "saturn", "m0-foundation"]]
+        },
+        "assets": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "description": "Slugs of L2 assets this strategy uses (collateral, supply, LP tokens)",
+          "examples": [["usdat"], ["usdc", "msusd"]]
+        }
+      }
+    }
+  }
+}

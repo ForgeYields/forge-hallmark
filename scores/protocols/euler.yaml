@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Euler
+slug: euler
+chains:
+  - ethereum
+category: lending-borrowing
+assessment:
+  date: '2026-04-10'
+  methodology_version: v3.1
+prs: 2.93
+criteria:
+  c1: 2
+  c2: 4
+  c3: 3
+  c4: 6.4
+  c5: 4
+  c6: 2

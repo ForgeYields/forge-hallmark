@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forgeyields.com/hallmark/schemas/protocol.schema.json",
+  "title": "Hallmark Protocol Risk Score",
+  "description": "Layer 1 — Protocol Risk Score (PRS). Schema for /public/scores/protocols/*.yaml. Contains numerical scores only; verdicts, caps, and rationale live in the private repo.",
+  "type": "object",
+  "required": [
+    "name",
+    "slug",
+    "chains",
+    "assessment",
+    "prs",
+    "criteria"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Human-readable protocol name",
+      "examples": ["Saturn Protocol", "Euler V2", "Pendle"]
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "URL-safe identifier used for lookups",
+      "examples": ["saturn", "euler-v2", "pendle"]
+    },
+    "chains": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "minItems": 1,
+      "description": "Chains where the protocol is deployed (lowercase identifiers)",
+      "examples": [["ethereum"], ["ethereum", "arbitrum", "base"]]
+    },
+    "category": {
+      "type": "string",
+      "description": "Optional protocol category for filtering / discovery",
+      "examples": [
+        "lending",
+        "yield-bearing-stablecoin",
+        "amm-dex",
+        "yield-aggregator",
+        "curator",
+        "rwa-issuer"
+      ]
+    },
+    "assessment": {
+      "type": "object",
+      "required": ["date", "methodology_version"],
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO 8601 date of last assessment",
+          "examples": ["2026-05-08"]
+        },
+        "methodology_version": {
+          "type": "string",
+          "pattern": "^v\\d+\\.\\d+$",
+          "description": "Hallmark methodology version used",
+          "examples": ["v3.10", "v3.9"]
+        }
+      }
+    },
+    "prs": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "Protocol Risk Score, 1-10 scale (lower = lower risk)"
+    },
+    "criteria": {
+      "type": "object",
+      "required": ["c1", "c2", "c3", "c4", "c5", "c6"],
+      "additionalProperties": false,
+      "description": "Composition breakdown — C1 to C6 scores",
+      "properties": {
+        "c1": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Audit Status (weight 25%)"
+        },
+        "c2": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "TVL History (weight 10%)"
+        },
+        "c3": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Governance Quality (weight 20%)"
+        },
+        "c4": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Incident History & Operational Age (weight 20%)"
+        },
+        "c5": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Smart Contract Risk (weight 15%)"
+        },
+        "c6": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Team & Transparency (weight 10%)"
+        }
+      }
+    }
+  }
+}

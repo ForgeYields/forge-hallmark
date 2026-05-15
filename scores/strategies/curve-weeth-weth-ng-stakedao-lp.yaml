@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=../../schemas/strategie.schema.json
+name: Curve weETH/WETH-ng StakeDAO LP
+slug: curve-weeth-weth-ng-stakedao-lp
+chain: ethereum
+strategy_type: 2A
+vault_target: fyETH
+assessment:
+  date: '2026-05-06'
+  methodology_version: v3.6
+grs: 3.99
+components:
+  protocol_risk: 4.52
+  asset_risk: 2.93
+  strategy_specific_risk: 4.2
+strategy_specific_criteria:
+  s1: 3
+  s2: 5
+  s3: 6
+  s4: 3
+dependencies:
+  protocols:
+    - curve-finance
+    - stakedao
+  assets:
+    - weeth
+    - weth

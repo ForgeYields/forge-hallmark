@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Standard Custody & Trust Company
+slug: standard-custody-trust-company
+chains:
+  - ethereum
+category: regulated-fiat-backed-stablecoin-issuer
+assessment:
+  date: '2026-04-24'
+  methodology_version: v3.6
+prs: 4.26
+criteria:
+  c1: 5
+  c2: 1
+  c3: 5
+  c4: 3.3
+  c5: 7
+  c6: 2

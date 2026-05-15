@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: Rocket Pool
+slug: rocket-pool
+chains:
+  - ethereum
+category: liquid-staking
+assessment:
+  date: '2026-04-17'
+  methodology_version: v3.4
+prs: 2.53
+criteria:
+  c1: 3
+  c2: 1
+  c3: 2
+  c4: 2.4
+  c5: 4
+  c6: 2

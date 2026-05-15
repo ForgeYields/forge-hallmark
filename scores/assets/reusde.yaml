@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: reUSDe
+slug: reusde
+chains:
+  - ethereum
+issuer_protocol: re-protocol
+asset_type: yield-bearing-rwa-stablecoin-junior-tranche
+assessment:
+  date: '2026-04-25'
+  methodology_version: v3.6
+ars: 7.55
+criteria:
+  a1: 7
+  a2: 8
+  a3: 9
+  a4: 6
+  a5: 7

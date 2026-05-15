@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: msUSDV2
+slug: msusdv2
+chains:
+  - ethereum
+issuer_protocol: mainstreet-finance
+asset_type: synthetic-dollar-usdc-wrapper
+assessment:
+  date: '2026-04-24'
+  methodology_version: v3.6
+ars: 5.4
+criteria:
+  a1: 5
+  a2: 4
+  a3: 6
+  a4: 6
+  a5: 7
