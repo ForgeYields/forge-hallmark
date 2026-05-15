@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
+name: Pendle PT-sUSDai-15OCT2026
+slug: pendle-pt-susdai-15oct2026
+chain: arbitrum
+strategy_type: 2C
+vault_target: fyUSDC
+addresses:
+  market: '0xcbf629c8d396b1261f81f55175afa010e94787d8'
+  pt: '0xb459db106f645d698e74027eef6019a26a0675cc'
+  sy: '0x30ccf4bbee313fcd19f3e295b3ba2920a24e2f62'
+  yt: '0x11456849c38ea4af212ab8d4324b39983716516a'
+  underlying: '0x0B2b2B2076d95dda7817e785989fE353fe955ef9'
+assessment:
+  date: '2026-05-11'
+  methodology_version: v3.10
+grs: 4.98
+components:
+  protocol_risk: 4.24
+  asset_risk: 6.00
+  strategy_specific_risk: 5.00
+strategy_specific_criteria:
+  s1: 6
+  s2: 5
+  s3: 4
+  s4: 3
+dependencies:
+  protocols:
+    - pendle
+    - usd-ai
+  assets:
+    - susdai
