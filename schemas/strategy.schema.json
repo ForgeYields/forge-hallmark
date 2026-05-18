@@ -40,8 +40,8 @@
     },
     "strategy_type": {
       "type": "string",
-      "enum": ["1", "2A", "2B", "2C", "3"],
-      "description": "Strategy type per methodology: Type 1 (Looping), 2A (LP Classic), 2B (LP Pendle), 2C (Pendle PT bond-like), 3 (Lending)"
+      "enum": ["1", "2A", "2B", "2C", "3", "W"],
+      "description": "Strategy type per methodology: Type 1 (Looping), 2A (LP Classic), 2B (LP Pendle), 2C (Pendle PT bond-like), 3 (Lending), W (Wrapper Vault — v4.1+)"
     },
     "vault_target": {
       "type": "string",
@@ -113,16 +113,21 @@
     },
     "strategy_specific_criteria": {
       "type": "object",
-      "description": "S-factor breakdown. Keys depend on strategy_type. Type 1/2A/2B/2C use s1-s4. Type 3 uses s1-s5.",
+      "description": "Strategy-specific criteria breakdown. Keys depend on strategy_type: Types 1/2A/2B/2C use s1-s4, Type 3 uses s1-s5, Type W (Wrapper, v4.1+) uses x1-x5. Type-specific requirements are enforced at assessment time (not schema-level).",
       "additionalProperties": false,
       "properties": {
         "s1": { "type": "number", "minimum": 1, "maximum": 10 },
         "s2": { "type": "number", "minimum": 1, "maximum": 10 },
         "s3": { "type": "number", "minimum": 1, "maximum": 10 },
         "s4": { "type": "number", "minimum": 1, "maximum": 10 },
-        "s5": { "type": "number", "minimum": 1, "maximum": 10 }
+        "s5": { "type": "number", "minimum": 1, "maximum": 10 },
+        "x1": { "type": "number", "minimum": 1, "maximum": 10 },
+        "x2": { "type": "number", "minimum": 1, "maximum": 10 },
+        "x3": { "type": "number", "minimum": 1, "maximum": 10 },
+        "x4": { "type": "number", "minimum": 1, "maximum": 10 },
+        "x5": { "type": "number", "minimum": 1, "maximum": 10 }
       },
-      "required": ["s1", "s2", "s3", "s4"]
+      "minProperties": 4
     },
     "dependencies": {
       "type": "object",

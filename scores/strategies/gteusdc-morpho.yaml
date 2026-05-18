@@ -1,23 +1,23 @@
-# yaml-language-server: $schema=../../schemas/strategie.schema.json
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
 name: gteUSDc Morpho (Gauntlet eUSD Core)
 slug: gteusdc-morpho
 chain: ethereum
-strategy_type: '3'
+strategy_type: W
 vault_target: fyUSDC
 assessment:
   date: 2026-05-18
-  methodology_version: v4.0
-grs: 3.31
+  methodology_version: v4.1
+grs: 3.63
 components:
   protocol_risk: 2.2
   asset_risk: 4.4
-  strategy_specific_risk: 3.6
+  strategy_specific_risk: 4.40
 strategy_specific_criteria:
-  s1: 2
-  s2: 4
-  s3: 6
-  s4: 4
-  s5: 2
+  x1: 4
+  x2: 5
+  x3: 4
+  x4: 4
+  x5: 5
 dependencies:
   chains:
     - ethereum
