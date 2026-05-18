@@ -23,6 +23,8 @@ Formulas                               → see formulas.md
 | v3.8 | 2026-05-07 | L3 Recursive Strategy Collateral Rule | Pendle PT-sUSDe as Morpho collateral pattern |
 | v3.9 | 2026-05-07 | L1 C3 Custody Mode Recognition (MPC threshold-signature) | Saturn Fireblocks MPC attestation precedent |
 | v3.10 | 2026-05-08 | L2 §A4 RWA Backing Class Taxonomy (T / C / I) | sUSDat / Altura / USD.AI rescore observations |
+| v4.0 | 2026-05-18 | Layer 0 Chain Risk Score (CRS, N1–N5 rubric) + integration via existing Multi-Protocol Rule | Monad / HyperEVM / Plasma chain-novelty under-rating |
+| v4.1 | 2026-05-18 | L3 Type W (Wrapper Vault, X1–X5 rubric) for delegated-execution strategies | Ipor Fusion + MetaMorpho-style two-layer trust model |
 
 Full amendment text: see `amendments/` subdirectory.
 
