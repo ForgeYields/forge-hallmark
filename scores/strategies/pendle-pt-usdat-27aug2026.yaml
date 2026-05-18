@@ -9,19 +9,21 @@ addresses:
   pt: '0x1d69402390657308c91179aa184bf992908c1e08'
   underlying: '0x23238f20b894f29041f48d88ee91131c395aaa71'
 assessment:
-  date: '2026-05-08'
-  methodology_version: v3.10
-grs: 4.30
+  date: 2026-05-18
+  methodology_version: v4.0
+grs: 5.49
 components:
-  protocol_risk: 4.24
-  asset_risk: 4.40
-  strategy_specific_risk: 4.30
+  protocol_risk: 7.64
+  asset_risk: 4.4
+  strategy_specific_risk: 4.3
 strategy_specific_criteria:
   s1: 4
   s2: 3
   s3: 4
   s4: 4
 dependencies:
+  chains:
+    - ethereum
   protocols:
     - pendle
     - saturn-protocol

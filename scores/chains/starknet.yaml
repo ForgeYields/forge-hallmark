@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/chain.schema.json
+name: Starknet
+slug: starknet
+category: l2-rollup-zk
+vm_type: cairo
+assessment:
+  date: '2026-05-18'
+  methodology_version: v4.0
+crs: 5.5
+criteria:
+  n1: 6  # Consensus & Decentralization — SHARP prover (S-two open-source, live on mainnet); staking phases 1-2 live, phase 3 (S-two into SHARP) and phase 4 (validator consensus participation) in transition; rubric explicitly cites Starknet in band 5-6 ("zk-L2 with prover decentralization in progress")
+  n2: 5  # Sequencer Architecture — v0.14.0 Grinta (Sep 2025) introduced 3 Tendermint sequencers (1/2 threshold); no generic user-side escape hatch (force-exit relies on Security Council minority ~1d); shared-sequencer architecture still early-phase
+  n3: 6  # Operational Track Record — mainnet since Nov 2021 (~4.5 yrs) but three sustained halts on record: April 2024 (4h, rounding error), Sept 2025 Grinta (~9h, required chain reorg reverting ~1h of tx), Jan 2026 (~4h, proving error); new multi-sequencer stack track record < 1 yr
+  n4: 4  # Bridge Architecture — StarkGate canonical bridge governed by 9-of-12 Security Council (instant) + 2-of-4 StarkWare Multisig (8-day delay); 5% TVL/24h withdrawal throttle; audited by OpenZeppelin, CertiK, Trail of Bits; no bridge incidents; instant-upgrade SC pathway weakens vs ideal timelock
+  n5: 6  # VM Maturity — Cairo + Sierra novel non-EVM stack; Sierra IR guarantees all runs provable (TRUE/FALSE only); 4+ yrs production; mature audit ecosystem (OpenZeppelin, Nethermind, ChainScoreLabs); formal verification tooling (Aegis, Caracal); $1M Immunefi; novel VM warrants band 5-6, mitigated by Sierra safety + audit coverage

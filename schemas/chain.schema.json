@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forgeyields.com/hallmark/schemas/chain.schema.json",
+  "title": "Hallmark Chain Risk Score",
+  "description": "Layer 0 — Chain Risk Score (CRS). Schema for /public/scores/chains/*.yaml. Introduced in methodology v4.0. Captures chain-level risk (consensus, sequencer, operational maturity, bridge architecture, VM). Integrates into L3 GRS via the existing Multi-Protocol Rule as an additional dependency.",
+  "type": "object",
+  "required": [
+    "name",
+    "slug",
+    "category",
+    "assessment",
+    "crs",
+    "criteria"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Human-readable chain name",
+      "examples": ["Ethereum", "Arbitrum", "Monad", "Hyperliquid HyperEVM"]
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "URL-safe identifier used for lookups",
+      "examples": ["ethereum", "arbitrum", "base", "starknet", "monad", "hyperevm"]
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "l1-chain",
+        "l2-rollup-optimistic",
+        "l2-rollup-zk",
+        "l2-validium",
+        "l2-sidechain",
+        "l3-appchain"
+      ],
+      "description": "Chain layer / topology"
+    },
+    "vm_type": {
+      "type": "string",
+      "description": "Execution environment family (informational)",
+      "examples": ["evm", "evm-equivalent", "cairo", "move", "monad-evm", "wasm"]
+    },
+    "assessment": {
+      "type": "object",
+      "required": ["date", "methodology_version"],
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO 8601 date of last assessment",
+          "examples": ["2026-05-18"]
+        },
+        "methodology_version": {
+          "type": "string",
+          "pattern": "^v\\d+\\.\\d+$",
+          "description": "Hallmark methodology version used (v4.0+ for chain assessments)",
+          "examples": ["v4.0"]
+        }
+      }
+    },
+    "crs": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 10,
+      "description": "Chain Risk Score, 1-10 scale (lower = lower risk)"
+    },
+    "criteria": {
+      "type": "object",
+      "required": ["n1", "n2", "n3", "n4", "n5"],
+      "additionalProperties": false,
+      "description": "Composition breakdown — N1 to N5 scores (Network criteria)",
+      "properties": {
+        "n1": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Consensus & Decentralization (weight 25%) — validator count, BFT threshold, finality, slashing"
+        },
+        "n2": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Sequencer Architecture (weight 20%) — centralization, force-exit, censorship resistance"
+        },
+        "n3": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Operational Track Record (weight 20%) — age, uptime, halts, recoveries"
+        },
+        "n4": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Bridge Architecture (weight 15%) — canonical bridge multisig, audit coverage, attack surface"
+        },
+        "n5": {
+          "type": "number",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "VM Maturity (weight 20%) — VM novelty, runtime audits, formal verification, known bugs"
+        }
+      }
+    }
+  }
+}

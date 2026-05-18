@@ -9,12 +9,12 @@ addresses:
   vault: '0x3B855AA8CC56a3cBd5dBb5456F5A13Ce86AA0fe8'
   underlying: '0xCAcd6fd266aF91b8AeD52aCCc382b4e165586E29'
 assessment:
-  date: '2026-05-18'
-  methodology_version: v3.10
-grs: 5.10
+  date: 2026-05-18
+  methodology_version: v4.0
+grs: 6.58
 components:
-  protocol_risk: 5.01
-  asset_risk: 4.50
+  protocol_risk: 9.25
+  asset_risk: 4.5
   strategy_specific_risk: 5.55
 strategy_specific_criteria:
   s1: 5
@@ -23,6 +23,8 @@ strategy_specific_criteria:
   s4: 7
   s5: 3
 dependencies:
+  chains:
+    - ethereum
   protocols:
     - morpho-blue
     - stakedao

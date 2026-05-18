@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/chain.schema.json
+name: Hyperliquid HyperEVM
+slug: hyperevm
+category: l1-chain
+vm_type: evm
+assessment:
+  date: '2026-05-18'
+  methodology_version: v4.0
+crs: 6.35
+criteria:
+  n1: 7
+  n2: 8
+  n3: 6
+  n4: 4
+  n5: 6

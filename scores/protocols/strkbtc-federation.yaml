@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/protocol.schema.json
+name: strkBTC Federation
+slug: strkbtc-federation
+chains:
+  - starknet
+category: bridge-federation
+assessment:
+  date: '2026-05-18'
+  methodology_version: v3.10
+prs: 7.36
+criteria:
+  c1: 8
+  c2: 10
+  c3: 8
+  c4: 6.80
+  c5: 8
+  c6: 2

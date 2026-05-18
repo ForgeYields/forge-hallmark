@@ -128,8 +128,17 @@
       "type": "object",
       "required": ["protocols", "assets"],
       "additionalProperties": false,
-      "description": "Cross-references to L1 protocols and L2 assets used by this strategy (slugs)",
+      "description": "Cross-references to L0 chains, L1 protocols, and L2 assets used by this strategy (slugs). v4.0+ supports `chains` array; chains feed into protocol_risk via Multi-Protocol Rule.",
       "properties": {
+        "chains": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "description": "Slugs of L0 chains this strategy operates on (v4.0+, optional for v3.x backwards compatibility)",
+          "examples": [["ethereum"], ["monad"], ["arbitrum"]]
+        },
         "protocols": {
           "type": "array",
           "items": {

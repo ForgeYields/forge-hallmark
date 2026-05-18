@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/chain.schema.json
+name: Arbitrum One
+slug: arbitrum
+category: l2-rollup-optimistic
+vm_type: evm-equivalent
+assessment:
+  date: '2026-05-18'
+  methodology_version: v4.0
+crs: 3.25
+criteria:
+  n1: 3  # Consensus & Decentralization — Stage 1 rollup, BoLD permissionless validation live since Feb 2025, anchored to Ethereum economic security; 3600 ETH bond creates economic concentration
+  n2: 4  # Sequencer Architecture — single Offchain Labs/Foundation sequencer, on-chain forceInclude after 24h delay, Timeboost express lane live, decentralization roadmap public
+  n3: 4  # Operational Track Record — 4.7y mainnet (Aug 2021), three documented sequencer halts (Jan 2022 ~7h hardware, Jun 2023 ~1h sequencer bug, Dec 2023 ~88min inscription surge), no deep reorgs, no loss-of-funds events, clean recovery from all incidents
+  n4: 2  # Bridge Architecture — canonical bridge with 9-of-12 emergency Security Council + 3-day L1 timelock for routine upgrades, multiple audits (Trail of Bits, ChainSecurity), no bridge incidents
+  n5: 3  # VM Maturity — Nitro is Geth-derived EVM-equivalent (audited Trail of Bits multiple engagements incl. ArbOS 30 July 2024); Stylus (WASM) live since Sept 2024 adds attack surface — one Critical-rated DoS bug Sept 2024, patched in Nitro 3.2.0

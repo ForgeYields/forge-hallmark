@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/chain.schema.json
+name: Ethereum
+slug: ethereum
+category: l1-chain
+vm_type: evm
+assessment:
+  date: '2026-05-18'
+  methodology_version: v4.0
+crs: 1.45
+criteria:
+  n1: 2  # Consensus & Decentralization — 896K+ active validators, 5+ EL clients, 6 CL clients, Casper FFG finality + slashing; minor super-majority risk (Geth ~63%, Lighthouse ~53%)
+  n2: 1  # Sequencer Architecture — L1, no sequencer concept; block proposers are randomly-selected validators
+  n3: 2  # Operational Track Record — live since Jul-2015 (~11y), no sustained chain halt; May-2023 finality delays (~25min + ~64min) and Dec-2025 Fusaka/Prysm bug (~24h validator drop) all recovered cleanly via client diversity
+  n4: 1  # Bridge Architecture — Native L1, no canonical bridge required for own assets
+  n5: 1  # VM Maturity — EVM live since 2015 (most battle-tested smart-contract VM), KEVM formal semantics, Cancun/Pectra/Fusaka all multi-audited

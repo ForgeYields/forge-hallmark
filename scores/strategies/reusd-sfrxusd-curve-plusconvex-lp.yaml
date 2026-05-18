@@ -7,11 +7,11 @@ vault_target: fyUSDC
 addresses:
   lp: '0xed785Af60bEd688baa8990cD5c4166221599A441'
 assessment:
-  date: '2026-05-18'
-  methodology_version: v3.10
-grs: 5.38
+  date: 2026-05-18
+  methodology_version: v4.0
+grs: 5.56
 components:
-  protocol_risk: 6.31
+  protocol_risk: 6.81
   asset_risk: 6.13
   strategy_specific_risk: 4.1
 strategy_specific_criteria:
@@ -20,6 +20,8 @@ strategy_specific_criteria:
   s3: 2
   s4: 3
 dependencies:
+  chains:
+    - ethereum
   protocols:
     - curve-finance
     - convex-finance

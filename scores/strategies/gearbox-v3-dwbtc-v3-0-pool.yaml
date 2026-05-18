@@ -5,11 +5,11 @@ chain: ethereum
 strategy_type: '3'
 vault_target: fyWBTC
 assessment:
-  date: '2026-05-08'
-  methodology_version: v3.9
-grs: 4.41
+  date: 2026-05-18
+  methodology_version: v4.0
+grs: 5.09
 components:
-  protocol_risk: 4.24
+  protocol_risk: 6.18
   asset_risk: 4.1
   strategy_specific_risk: 4.75
 strategy_specific_criteria:
@@ -19,6 +19,8 @@ strategy_specific_criteria:
   s4: 5
   s5: 3
 dependencies:
+  chains:
+    - ethereum
   protocols:
     - gearbox-finance
     - curve-finance

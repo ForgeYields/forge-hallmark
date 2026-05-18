@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=../../schemas/chain.schema.json
+name: Base
+slug: base
+category: l2-rollup-optimistic
+vm_type: evm-equivalent
+assessment:
+  date: '2026-05-18'
+  methodology_version: v4.0
+crs: 3.4
+criteria:
+  n1: 3  # Consensus & Decentralization — Stage 1, permissionless fault proofs live (Oct 30 2024), settles to Ethereum
+  n2: 4  # Sequencer Architecture — single Coinbase Cloud sequencer, force-exit via L1 + fault proofs, Superchain shared-sequencer roadmap
+  n3: 4  # Operational Track Record — ~2.75 yrs live (Aug 9 2023), multiple sub-1h outages + one ~12h sequencer pause (2024 chain-split), no fund loss
+  n4: 3  # Bridge Architecture — OptimismPortal, ≥9-of-12 Security Council + Base Coordinator Multisig + Op Foundation, extensively audited
+  n5: 3  # VM Maturity — OP Stack Bedrock (EVM-equivalent, ~3 yrs mainnet since Jun 2023), multi-audit, multi-chain proven, not 5+ yrs
