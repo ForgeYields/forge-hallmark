@@ -6,13 +6,13 @@ chains:
   - arbitrum
 category: interest-rate-derivatives
 assessment:
-  date: '2026-04-10'
-  methodology_version: v3.1
-prs: 5.77
+  date: '2026-05-18'
+  methodology_version: v3.10
+prs: 5.57
 criteria:
-  c1: 3
-  c2: 6
-  c3: 8
+  c1: 5
+  c2: 8
+  c3: 7
   c4: 4.1
   c5: 6
   c6: 4

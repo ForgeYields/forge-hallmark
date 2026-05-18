@@ -7,7 +7,7 @@ category: lending-borrowing
 assessment:
   date: '2026-04-10'
   methodology_version: v3.1
-prs: 5.17
+prs: 5.42
 criteria:
   c1: 4
   c2: 7

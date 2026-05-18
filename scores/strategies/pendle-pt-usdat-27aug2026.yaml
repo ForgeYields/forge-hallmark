@@ -5,7 +5,8 @@ chain: ethereum
 strategy_type: 2C
 vault_target: fyUSDC
 addresses:
-  market: '0x4ed8a0a4d61c0f0e5b56a2e3ca5e84c12f3e30d4'
+  market: '0x9afe7a057a09cf5da748d952078c9c99938b4329'
+  pt: '0x1d69402390657308c91179aa184bf992908c1e08'
   underlying: '0x23238f20b894f29041f48d88ee91131c395aaa71'
 assessment:
   date: '2026-05-08'

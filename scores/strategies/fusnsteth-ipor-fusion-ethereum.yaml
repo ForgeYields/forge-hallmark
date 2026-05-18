@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
+name: fusnstETH Ipor Fusion Looping (Ethereum)
+slug: fusnsteth-ipor-fusion-ethereum
+chain: ethereum
+strategy_type: '1'
+vault_target: fyETH
+addresses:
+  vault: '0xB8a451107A9f87FDe481D4D686247D6e43Ed715e'
+  underlying: '0xae7ab96520de3a18e5e111b5eaab095312d7fe84'
+assessment:
+  date: '2026-05-18'
+  methodology_version: v3.10
+grs: 4.96
+components:
+  protocol_risk: 6.39
+  asset_risk: 3.2
+  strategy_specific_risk: 4.8
+strategy_specific_criteria:
+  s1: 3
+  s2: 7
+  s3: 5
+  s4: 5
+dependencies:
+  protocols:
+    - ipor-protocol
+    - aave-v3
+  assets:
+    - steth
+    - wsteth
+    - weth

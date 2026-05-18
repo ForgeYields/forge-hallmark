@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../../schemas/asset.schema.json
+symbol: reUSD
+slug: reusd-resupply
+chains:
+  - ethereum
+issuer_protocol: resupply
+asset_type: cdp-stablecoin
+assessment:
+  date: '2026-05-18'
+  methodology_version: v3.10
+ars: 6.35
+criteria:
+  a1: 6
+  a2: 5
+  a3: 8
+  a4: 6
+  a5: 7

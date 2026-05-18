@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
+# NOTE: Strategy is EXCLUDED at L3 via L1 cascade (Ipor Protocol C3=8 hard cap).
+# GRS value below is indicative-only per methodology §7.3 (foregone-conclusion abbreviated output).
+# Binding verdict: EXCLUDED. See /assessments/taucbeth-ipor_l3_assessment.md for cascade rationale.
+name: TAUCBETH (Ipor Fusion cbETH Dynamic Looping on Base)
+slug: taucbeth-ipor-fusion-base
+chain: base
+strategy_type: '1'
+vault_target: fyETH
+addresses:
+  vault: '0xe883426B4fc84A7f5cc86415CAbBef43E73a4CC8'
+  underlying: '0x2Ae3F1Ec7F1F5012CFEab0185bFc7aA3cf0DEc22'
+assessment:
+  date: '2026-05-18'
+  methodology_version: v3.10
+grs: 5.10
+components:
+  protocol_risk: 6.61
+  asset_risk: 4.10
+  strategy_specific_risk: 4.40
+strategy_specific_criteria:
+  s1: 4
+  s2: 5
+  s3: 4
+  s4: 4
+dependencies:
+  protocols:
+    - ipor-protocol
+    - aave-v3
+  assets:
+    - cbeth

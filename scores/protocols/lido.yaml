@@ -9,9 +9,9 @@ assessment:
   methodology_version: v3.1
 prs: 2.29
 criteria:
-  c1: 1
-  c2: 1
-  c3: 2
+  c1: 2
+  c2: 2
+  c3: 3
   c4: 1.7
   c5: 3
   c6: 2

@@ -1,0 +1,29 @@
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
+name: ynETHx/WETH Curve+Convex LP
+slug: ynethx-weth-curve-plusconvex-lp
+chain: ethereum
+strategy_type: 2A
+vault_target: fyETH
+addresses:
+  lp: '0xD65ed4BcE447195187f37cE7D82f56AdF1826F8F'
+  market: '0x8153F3b92940AC09a497156AE4515679185c05A8'
+assessment:
+  date: '2026-05-18'
+  methodology_version: v3.10
+grs: 5.11
+components:
+  protocol_risk: 6.31
+  asset_risk: 5.68
+  strategy_specific_risk: 3.70
+strategy_specific_criteria:
+  s1: 3
+  s2: 6
+  s3: 2
+  s4: 3
+dependencies:
+  protocols:
+    - curve-finance
+    - convex-finance
+  assets:
+    - ynethx
+    - weth
