@@ -4,7 +4,7 @@
 
 We score every chain, protocol, asset, and yield strategy in our vaults against a transparent, four-layer framework. The methodology is published here in full. The numerical scores are too.
 
-> **Current version:** v4.1 (May 2026). The framework base lives in `methodology/v3.10/` with amendments through v4.1 in `methodology/v3.10/amendments/`. See the [Amendments](#amendments) section below for the full version timeline.
+> **Current version:** v4.1 (May 2026). See the [Amendments](#amendments) section below for the full version timeline.
 
 ---
 
@@ -36,7 +36,7 @@ Every chain on which ForgeYields deploys strategies receives a CRS from 1 (lowes
 
 Chain risk feeds Layer 1 Protocol Risk via the Multi-Protocol Rule rather than getting its own composite weight — so per-chain deployments of the same protocol (Morpho on Ethereum vs Morpho on Monad) score differently.
 
-Full rubric: [`methodology/v3.10/amendments/v40-amendment.md`](./methodology/v3.10/amendments/v40-amendment.md)
+Full rubric: [`methodology/amendments/v40-amendment.md`](./methodology/amendments/v40-amendment.md)
 
 ### Layer 1 — Protocol Risk Score (PRS)
 
@@ -51,7 +51,7 @@ Every DeFi protocol that ForgeYields strategies depend on receives a PRS from 1 
 | C5 — Smart Contract Risk | 15% | Code complexity, dependencies, upgradeability, cross-chain config (v3.6 DVN rules) |
 | C6 — Team & Transparency | 10% | Doxxing status, public track record, communication |
 
-Full rubric: [`methodology/v3.10/layer1_protocol_assessment_methodology.md`](./methodology/v3.10/layer1_protocol_assessment_methodology.md)
+Full rubric: [`methodology/layer1_protocol_assessment_methodology.md`](./methodology/layer1_protocol_assessment_methodology.md)
 
 ### Layer 2 — Asset Risk Score (ARS)
 
@@ -65,7 +65,7 @@ Every underlying asset (USDC, USDat, sUSDai, wstETH, etc.) receives an ARS from 
 | A4 — Collateral Backing | 20% | Reserve quality, attestation, custody (v3.10 Class T/C/I taxonomy) |
 | A5 — Market Cap / Supply Concentration | 10% | Mcap, top wallet concentration |
 
-Full rubric: [`methodology/v3.10/layer2_asset_assessment_methodology.md`](./methodology/v3.10/layer2_asset_assessment_methodology.md)
+Full rubric: [`methodology/layer2_asset_assessment_methodology.md`](./methodology/layer2_asset_assessment_methodology.md)
 
 ### Layer 3 — Global Risk Score (GRS)
 
@@ -86,8 +86,8 @@ Strategy-specific risk decomposes into S-factors (or X-factors for Type W) that 
 
 Type W was introduced in v4.1 to capture the two-layer trust model of delegated-execution wrappers like Ipor Fusion and MetaMorpho-curated vaults, which Types 1/2/3 do not cleanly express.
 
-Full rubric: [`methodology/v3.10/layer3_strategy_assessment_methodology.md`](./methodology/v3.10/layer3_strategy_assessment_methodology.md)
-Type W amendment: [`methodology/v3.10/amendments/v41-amendment.md`](./methodology/v3.10/amendments/v41-amendment.md)
+Full rubric: [`methodology/layer3_strategy_assessment_methodology.md`](./methodology/layer3_strategy_assessment_methodology.md)
+Type W amendment: [`methodology/amendments/v41-amendment.md`](./methodology/amendments/v41-amendment.md)
 
 ### Eligibility — composite + hard caps
 
@@ -132,7 +132,7 @@ dependencies:
   assets: [eusd, wbtc, eth-plus, wsteth]
 ```
 
-GRS verification: `0.35 × 2.2 + 0.25 × 4.4 + 0.40 × 4.40 = 3.63`. The methodology documents in `methodology/v3.10/` (and amendments) explain how each criterion is evaluated, including how chain risk feeds PR via the Multi-Protocol Rule and how X-criteria are weighted for Type W.
+GRS verification: `0.35 × 2.2 + 0.25 × 4.4 + 0.40 × 4.40 = 3.63`. The methodology documents in `methodology/` (and amendments) explain how each criterion is evaluated, including how chain risk feeds PR via the Multi-Protocol Rule and how X-criteria are weighted for Type W.
 
 ---
 
@@ -149,7 +149,7 @@ The methodology evolves as DeFi evolves. Each amendment is published with its ra
 | **v4.0** | **2026-05-18** | **Layer 0 Chain Risk Score (CRS, N1–N5 rubric) + integration via Multi-Protocol Rule** |
 | **v4.1** | **2026-05-18** | **L3 Type W (Wrapper Vault, X1–X5 rubric) for delegated-execution strategies** |
 
-See [`methodology/v3.10/amendments/`](./methodology/v3.10/amendments/) for full text.
+See [`methodology/amendments/`](./methodology/amendments/) for full text.
 
 ---
 

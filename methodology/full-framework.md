@@ -1,11 +1,12 @@
 # ForgeYields — DeFi Risk Assessment Methodology
 
-**Version:** v3.9
-**Date:** 2026-05-07
+**Current version:** v4.1 (May 2026)
+**Last consolidated into this single-file snapshot:** 2026-05-07 at v3.9 baseline.
+**Active layered amendments:** v3.10, v4.0, v4.1 — see `amendments/` for full text; these have not yet been folded into this consolidated framework file but are operationally in force.
 **Author:** Risk Analyst Agent (updated by CEO)
 **Audience:** Institutional LPs, Quant Funds, Internal Strategy Team
 **Scope:** All yield strategies under consideration for fyUSDC, fyETH, fyWBTC vaults
-**Amendment history:** v3.5 (C4 max rule, 2026-04-23) + v3.6 (C5 cross-chain + C1 audit coverage, 2026-04-23) + v3.7 (L2 A3 async exit credit + WATCHLIST band 6.0–6.5, 2026-05-06) + v3.8 (L3 Recursive Strategy Collateral Rule, 2026-05-07) + v3.9 (L1 C3 Custody Mode Recognition: MPC threshold-signature treatment, 2026-05-07) — see §7 Changelog and `methodology/v35_amendment.md` / `methodology/v36_amendment.md` / `methodology/v37_amendment.md` / `methodology/v38_amendment.md` / `methodology/v39_amendment.md`
+**Amendment history:** v3.5 (C4 max rule) + v3.6 (C5 cross-chain + C1 audit coverage) + v3.7 (L2 A3 async exit credit + WATCHLIST band 6.0–6.5) + v3.8 (L3 Recursive Strategy Collateral Rule) + v3.9 (L1 C3 Custody Mode Recognition: MPC threshold-signature) + v3.10 (L2 §A4 RWA Backing Class Taxonomy T/C/I) + **v4.0 (Layer 0 Chain Risk Score)** + **v4.1 (L3 Type W Wrapper Vault, X1–X5 rubric)** — see §7 Changelog and `amendments/`.
 
 ---
 

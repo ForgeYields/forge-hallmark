@@ -1,6 +1,8 @@
-# The Hallmark — Methodology v3.10
+# The Hallmark — Methodology
 
-The Hallmark is a three-layer risk methodology for evaluating DeFi yield strategies. Every yield strategy in ForgeYields vaults receives a numerical score derived from this framework.
+**Current version:** v4.1 (May 2026) · see [Amendments timeline](#amendments-timeline) for the full evolution.
+
+The Hallmark is a four-layer risk methodology for evaluating DeFi yield strategies. Every chain, protocol, asset, and yield strategy in ForgeYields vaults receives a numerical score derived from this framework.
 
 ## Structure
 
