@@ -68,11 +68,11 @@ For each asset Aj in the strategy:
 
 Per methodology §4.2.1, L3 inherits L1 and L2 hard caps. **ANY single L1 hard cap trigger (PRS>7, C1≥9, max(C4a, C4)≥8 [v3.5], C3≥8, C5≥9 [incl. v3.6 cross-chain 1-of-1 DVN], C6≥8) OR L2 hard cap trigger (ARS>6.5 [v3.7], A2≥9) on ANY participating protocol or asset excludes the strategy.**
 
-If cascade excludes the strategy, the assessment output format is truncated to:
+If cascade excludes the strategy, the assessment output remains **fully computed** (per v4.2: GRS is always derived; verdict is a separate field). Required sections:
 - Summary header
 - §0 (classification + cascade table showing which trigger fired)
-- §9 (GRS computation skipped, verdict EXCLUDED documented)
-- Omit §5–§8 S-factor scoring (non-informative)
+- §5–§8 S-factor scoring completed in full (supports continuous measurement and same-cycle reactivation if the cascade lifts — see v4.2 §3)
+- §9 documents the full GRS computation **and** the `verdict: excluded` derived from the cascade trigger (verdict prevails for deployment per v4.2 §2.3)
 
 ### 0.3 Scope boundary
 

@@ -73,9 +73,48 @@ Continuing to compute GRS for cascade-excluded strategies serves four purposes:
 
 ---
 
-## 4. Text replacements (three locations)
+## 4. Text replacements (four locations)
 
-See §6 of this amendment for the exact before/after pairs to apply in `layer3_strategy_assessment_methodology.md` and `full-framework.md`. No threshold, weight, rubric, or criterion is touched — pure procedural language.
+No threshold, weight, rubric, or criterion is touched — pure procedural language. Four exact before/after pairs:
+
+### 4.1 `layer3_strategy_assessment_methodology.md` §342 (Type 2B Pendle LP — S2 cascade)
+
+**Before:**
+> Cascade rule: If underlying L2 ARS > 6.5, strategy is EXCLUDED via §0.2.2. Do not compute S2; document the cascade.
+
+**After:**
+> **Cascade rule:** If underlying L2 ARS > 6.5 (v3.7 L2 hard cap), the strategy verdict is forced to **EXCLUDED** via §0.2.2 regardless of composite GRS. Per v4.2, S2 (and all other components / criteria / composite GRS) is still computed and published — the verdict field carries the cascade exclusion; the GRS provides continuous measurement of how the strategy would score if the cascade lifted. Assets in WATCHLIST band (ARS 6.0–6.5) trigger §5 Rule 3 concentration cap, not exclusion.
+
+### 4.2 `layer3_strategy_assessment_methodology.md` §401 (Type 2C Pendle PT — S1 cascade)
+
+Same wording as §4.1 with `S1` substituted for `S2`.
+
+### 4.3 `layer3_strategy_assessment_methodology.md` §74–§75 (cascade-excluded report structure)
+
+**Before:**
+```
+If cascade excludes the strategy, the assessment output format is truncated to:
+- Summary header
+- §0 (classification + cascade table showing which trigger fired)
+- §9 (GRS computation skipped, verdict EXCLUDED documented)
+- Omit §5–§8 S-factor scoring (non-informative)
+```
+
+**After:**
+```
+If cascade excludes the strategy, the assessment output remains fully computed
+(per v4.2: GRS is always derived; verdict is a separate field). Required sections:
+- Summary header
+- §0 (classification + cascade table showing which trigger fired)
+- §5–§8 S-factor scoring completed in full (supports continuous measurement and
+  same-cycle reactivation if the cascade lifts — see v4.2 §3)
+- §9 documents the full GRS computation AND the verdict: excluded derived from
+  the cascade trigger (verdict prevails for deployment per v4.2 §2.3)
+```
+
+### 4.4 `full-framework.md` §629
+
+Same pattern as §4.1, with `§4.2.1` referenced instead of `§0.2.2`.
 
 ---
 
@@ -83,7 +122,8 @@ See §6 of this amendment for the exact before/after pairs to apply in `layer3_s
 
 After v4.2 is applied:
 
-- ✅ All three text locations (§342, §401 in L3; §629 in full-framework) match the new wording
+- ✅ All four text locations (§74–75, §342, §401 in L3; §629 in full-framework) match the new wording
+- ✅ No occurrence of "GRS computation skipped", "Do not compute S1/S2", or "Omit §5–§8" remains anywhere in `methodology/`
 - ✅ No threshold, weight, criterion, or rubric is modified
 - ✅ No existing score record requires recomputation or republication
 - ✅ Validators (`validate-scores.js`, `check-cascade-integrity.js`) continue to pass without modification — they already enforce the "GRS always present" invariant in practice

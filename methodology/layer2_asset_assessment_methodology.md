@@ -457,7 +457,7 @@ Assets with <30 days of trading history cannot be fairly scored on A2 (depeg his
 
 Every L2 assessment file should include:
 
-1. **Header**: asset name, date, methodology version (v3.6), analyst, status
+1. **Header**: asset name, date, methodology version (v4.2), analyst, status
 2. **Summary table**: A1-A5 scores + weighted values + ARS + verdict
 3. **Scope note**: chain, wrapping, dual-assessment L1 reference
 4. **Protocol/asset overview**: issuer, launch date, mcap, peg target
