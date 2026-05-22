@@ -1,6 +1,6 @@
 # The Hallmark — Methodology
 
-**Current version:** v4.1 (May 2026) · see [Amendments timeline](#amendments-timeline) for the full evolution.
+**Current version:** v4.2 (May 2026) · see [Amendments timeline](#amendments-timeline) for the full evolution.
 
 The Hallmark is a four-layer risk methodology for evaluating DeFi yield strategies. Every chain, protocol, asset, and yield strategy in ForgeYields vaults receives a numerical score derived from this framework.
 
@@ -27,6 +27,7 @@ Formulas                               → see formulas.md
 | v3.10 | 2026-05-08 | L2 §A4 RWA Backing Class Taxonomy (T / C / I) | sUSDat / Altura / USD.AI rescore observations |
 | v4.0 | 2026-05-18 | Layer 0 Chain Risk Score (CRS, N1–N5 rubric) + integration via existing Multi-Protocol Rule | Monad / HyperEVM / Plasma chain-novelty under-rating |
 | v4.1 | 2026-05-18 | L3 Type W (Wrapper Vault, X1–X5 rubric) for delegated-execution strategies | Ipor Fusion + MetaMorpho-style two-layer trust model |
+| v4.2 | 2026-05-22 | L3 procedural clarification: GRS always computed; verdict derived separately (cascade exclusion ≠ skip computation) | Live score files (e.g., pendle-pt-apyusd-18jun2026) carried full GRS despite cascade exclusion; methodology text contradicted production reality |
 
 Full amendment text: see `amendments/` subdirectory.
 

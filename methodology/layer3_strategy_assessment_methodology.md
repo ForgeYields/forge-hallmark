@@ -1,6 +1,6 @@
 # Layer 3 Strategy Assessment — Field Guide
 
-**Current methodology version:** v4.1 (May 2026)
+**Current methodology version:** v4.2 (May 2026)
 **Last L3-specific amendments:** v3.8 (Recursive Strategy Collateral Rule, 2026-05-07) · v4.1 (Type W Wrapper Vault X1–X5 rubric, 2026-05-18)
 **L3 core structure:** unchanged since v3.4. Cascade gate (§0.2.3) inherits L1/L2 hard caps including v3.5/v3.6 L1 changes and **v3.7 L2 ARS > 6.5 cap with 6.0–6.5 WATCHLIST band**. Section 5W (Type W Wrapper Vault) added in v4.1.
 **Date:** Last meaningful edit 2026-05-18 (v4.1).
@@ -339,7 +339,7 @@ Pool contract + booster contract attack surface. See §4.3.2 in risk_methodology
 | 6.5 – 7.5 | 8 |
 | > 7.5 | 10 |
 
-**Cascade rule:** If underlying L2 ARS > 6.5 (v3.7 L2 hard cap), **strategy is EXCLUDED** via §0.2.2. Do not compute S2; document the cascade. Assets in WATCHLIST band (ARS 6.0–6.5) trigger §5 Rule 3 concentration cap, not exclusion.
+**Cascade rule:** If underlying L2 ARS > 6.5 (v3.7 L2 hard cap), the strategy `verdict` is forced to **EXCLUDED** via §0.2.2 regardless of composite GRS. Per v4.2, S2 (and all other components / criteria / composite GRS) is still computed and published — the verdict field carries the cascade exclusion; the GRS provides continuous measurement of how the strategy would score if the cascade lifted. Assets in WATCHLIST band (ARS 6.0–6.5) trigger §5 Rule 3 concentration cap, not exclusion.
 
 ### 5.3 S3 — Maturity Risk (20%) — CRITICAL
 
@@ -398,7 +398,7 @@ This is the dominant factor for PT-only positions. PT's redemption ratio is fixe
 | 6.5 – 7.5 | 8 |
 | > 7.5 | 10 |
 
-**Cascade rule:** If underlying L2 ARS > 6.5 (v3.7 L2 hard cap), **strategy is EXCLUDED** via §0.2.2. Do not compute S1; document the cascade. Assets in WATCHLIST band (ARS 6.0–6.5) trigger §5 Rule 3 concentration cap, not exclusion.
+**Cascade rule:** If underlying L2 ARS > 6.5 (v3.7 L2 hard cap), the strategy `verdict` is forced to **EXCLUDED** via §0.2.2 regardless of composite GRS. Per v4.2, S1 (and all other components / criteria / composite GRS) is still computed and published — the verdict field carries the cascade exclusion; the GRS provides continuous measurement of how the strategy would score if the cascade lifted. Assets in WATCHLIST band (ARS 6.0–6.5) trigger §5 Rule 3 concentration cap, not exclusion.
 
 ### 5b.2 S2 — Maturity Risk (30%)
 

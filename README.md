@@ -4,7 +4,7 @@
 
 We score every chain, protocol, asset, and yield strategy in our vaults against a transparent, four-layer framework. The methodology is published here in full. The numerical scores are too.
 
-> **Current version:** v4.1 (May 2026). See the [Amendments](#amendments) section below for the full version timeline.
+> **Current version:** v4.2 (May 2026). See the [Amendments](#amendments) section below for the full version timeline.
 
 ---
 
@@ -148,6 +148,7 @@ The methodology evolves as DeFi evolves. Each amendment is published with its ra
 | v3.10 | 2026-05-08 | L2 §A4 RWA Backing Class Taxonomy (T / C / I) |
 | **v4.0** | **2026-05-18** | **Layer 0 Chain Risk Score (CRS, N1–N5 rubric) + integration via Multi-Protocol Rule** |
 | **v4.1** | **2026-05-18** | **L3 Type W (Wrapper Vault, X1–X5 rubric) for delegated-execution strategies** |
+| **v4.2** | **2026-05-22** | **L3 procedural clarification: GRS always computed; verdict derived separately (cascade exclusion ≠ skip computation)** |
 
 See [`methodology/amendments/`](./methodology/amendments/) for full text.
 
