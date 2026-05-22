@@ -1,8 +1,10 @@
 # Layer 3 Strategy Assessment — Field Guide
 
-**Version:** v3.6 (L3 core structure unchanged since v3.4; §0.2.3 cascade gate inherits all v3.5/v3.6 L1 hard caps)
-**Date:** 2026-04-23 (banner); core structure 2026-04-21
-**Companion to:** `risk_methodology.md` §4 (core rubrics), `layer1_protocol_assessment_methodology.md`, `layer2_asset_assessment_methodology.md`
+**Current methodology version:** v4.1 (May 2026)
+**Last L3-specific amendments:** v3.8 (Recursive Strategy Collateral Rule, 2026-05-07) · v4.1 (Type W Wrapper Vault X1–X5 rubric, 2026-05-18)
+**L3 core structure:** unchanged since v3.4. Cascade gate (§0.2.3) inherits L1/L2 hard caps including v3.5/v3.6 L1 changes and **v3.7 L2 ARS > 6.5 cap with 6.0–6.5 WATCHLIST band**. Section 5W (Type W Wrapper Vault) added in v4.1.
+**Date:** Last meaningful edit 2026-05-18 (v4.1).
+**Companion to:** `full-framework.md` (core rubrics), `layer1_protocol_assessment_methodology.md`, `layer2_asset_assessment_methodology.md`. See `amendments/` for v3.7, v3.8, v4.1 full text.
 
 **Note on amendment applicability:** v3.5 and v3.6 are L1-focused rule changes. L3 inherits them automatically through the §0.2.3 cascade gate — any L1 hard cap trigger (including v3.5 `max(C4a, C4) ≥ 8` and v3.6 C5 cross-chain / C1 audit coverage rules) propagates to L3 exclusion.
 
@@ -64,7 +66,7 @@ For each asset Aj in the strategy:
 
 #### 0.2.3 L3 Weakest Link Rule application
 
-Per methodology §4.2.1, L3 inherits L1 and L2 hard caps. **ANY single L1 hard cap trigger (PRS>7, C1≥9, max(C4a, C4)≥8 [v3.5], C3≥8, C5≥9 [incl. v3.6 cross-chain 1-of-1 DVN], C6≥8) OR L2 hard cap trigger (ARS>6, A2≥9) on ANY participating protocol or asset excludes the strategy.**
+Per methodology §4.2.1, L3 inherits L1 and L2 hard caps. **ANY single L1 hard cap trigger (PRS>7, C1≥9, max(C4a, C4)≥8 [v3.5], C3≥8, C5≥9 [incl. v3.6 cross-chain 1-of-1 DVN], C6≥8) OR L2 hard cap trigger (ARS>6.5 [v3.7], A2≥9) on ANY participating protocol or asset excludes the strategy.**
 
 If cascade excludes the strategy, the assessment output format is truncated to:
 - Summary header
@@ -337,7 +339,7 @@ Pool contract + booster contract attack surface. See §4.3.2 in risk_methodology
 | 6.5 – 7.5 | 8 |
 | > 7.5 | 10 |
 
-**Cascade rule:** If underlying L2 ARS > 6.0, **strategy is EXCLUDED** via §0.2.2. Do not compute S2; document the cascade.
+**Cascade rule:** If underlying L2 ARS > 6.5 (v3.7 L2 hard cap), **strategy is EXCLUDED** via §0.2.2. Do not compute S2; document the cascade. Assets in WATCHLIST band (ARS 6.0–6.5) trigger §5 Rule 3 concentration cap, not exclusion.
 
 ### 5.3 S3 — Maturity Risk (20%) — CRITICAL
 
@@ -396,7 +398,7 @@ This is the dominant factor for PT-only positions. PT's redemption ratio is fixe
 | 6.5 – 7.5 | 8 |
 | > 7.5 | 10 |
 
-**Cascade rule:** If underlying L2 ARS > 6.0, **strategy is EXCLUDED** via §0.2.2. Do not compute S1; document the cascade.
+**Cascade rule:** If underlying L2 ARS > 6.5 (v3.7 L2 hard cap), **strategy is EXCLUDED** via §0.2.2. Do not compute S1; document the cascade. Assets in WATCHLIST band (ARS 6.0–6.5) trigger §5 Rule 3 concentration cap, not exclusion.
 
 ### 5b.2 S2 — Maturity Risk (30%)
 
@@ -599,7 +601,7 @@ When an active strategy becomes EXCLUDED via re-scoring:
 |-----------------|------------------|--------------------|
 | < 5% of vault | Any | 14 days |
 | 5-15% of vault | L2 A2 ≥ 9 OR L1 C3 ≥ 8 | **7 days** |
-| 5-15% of vault | ARS > 6.0 (not A2) | 14 days |
+| 5-15% of vault | ARS > 6.5 (not A2) | 14 days |
 | > 15% of vault | Any | **7 days** |
 | > 30% of vault | Any | **Immediate** (coordinate with CEO) |
 

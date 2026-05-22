@@ -626,7 +626,7 @@ Applicable to: holding standalone Pendle Principal Tokens (PT) without LP exposu
 | 6.5 – 7.5 | 8 |
 | > 7.5 | 10 |
 
-**Cascade rule:** If underlying L2 ARS > 6.0, **strategy is EXCLUDED** via §4.2.1 L2 hard cap. Do not compute S1; document the cascade.
+**Cascade rule:** If underlying L2 ARS > 6.5 (v3.7), **strategy is EXCLUDED** via §4.2.1 L2 hard cap. Do not compute S1; document the cascade. Assets in WATCHLIST band (ARS 6.0–6.5) trigger §5 Rule 3 concentration cap, not exclusion.
 
 **S2 — Maturity Risk** (same rubric as Type 2B S3):
 

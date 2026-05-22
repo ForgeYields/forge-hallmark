@@ -1,9 +1,10 @@
 # Layer 1 — Protocol Risk Assessment Methodology
 
-**Version:** v3.6
-**Date:** 2026-04-23
-**Companion to:** `risk_methodology.md` (canonical source for rubrics, formulas, and hard caps)
-**Amendment applicability:** Incorporates v3.5 (C4 max rule) and v3.6 (C5 cross-chain + C1 audit coverage) amendments
+**Current methodology version:** v4.1 (May 2026)
+**Last L1-specific amendment:** v3.9 (C3 Custody Mode Recognition / MPC threshold-signature, 2026-05-07)
+**L1 rubric base:** unchanged since v3.4. Subsequent L1-specific changes: v3.5 (C4 max rule), v3.6 (C5 cross-chain DVN + C1 audit coverage), v3.9 (C3 MPC custody recognition). v4.0 adds Layer 0 chain-risk dependency feeding PR via Multi-Protocol Rule (no L1 rubric changes).
+**Date:** Last meaningful edit 2026-05-07 (v3.9).
+**Companion to:** `full-framework.md` (canonical source for rubrics, formulas, and hard caps). See `amendments/` for v3.5, v3.6, v3.9, v4.0 full text.
 
 **Purpose:** Practical guide for scoring Layer 1 (protocol-level) risk. Contains data sources, verification steps, and application notes for each criterion.
 

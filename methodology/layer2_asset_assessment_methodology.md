@@ -1,8 +1,10 @@
 # Layer 2 — Asset Risk Assessment Methodology
 
-**Version:** v3.7 (A3 async exit credit + WATCHLIST band 6.0–6.5; L2 rubrics base unchanged since v3.4; §0 cascade gate inherits v3.5/v3.6 L1 hard caps)
-**Date:** 2026-05-06
-**Companion to:** `risk_methodology.md §3` (canonical source for rubrics, formulas, and hard caps)
+**Current methodology version:** v4.1 (May 2026)
+**Last L2-specific amendment:** v3.10 (A4 RWA Backing Class Taxonomy T/C/I, 2026-05-08)
+**L2 rubric base:** unchanged since v3.4. Subsequent L2-specific changes: v3.7 (A3 Async Exit Credit + WATCHLIST band 6.0–6.5 + ARS hard cap raised from 6.0 to 6.5) and v3.10 (A4 Class T/C/I taxonomy). §0 cascade gate inherits v3.5/v3.6 L1 hard caps.
+**Date:** Last meaningful edit 2026-05-08 (v3.10); thresholds revalidated against v4.1.
+**Companion to:** `full-framework.md` (canonical source for rubrics, formulas, and hard caps). See `amendments/` for v3.7, v3.10 full text.
 
 **Purpose:** Practical guide for scoring Layer 2 (asset-level) risk. Contains data sources, verification steps, and application notes for each criterion.
 
@@ -461,7 +463,7 @@ Every L2 assessment file should include:
 4. **Protocol/asset overview**: issuer, launch date, mcap, peg target
 5. **Per-criterion rationale**: A1 through A5 with sources and verification evidence
 6. **ARS calculation** with weighted breakdown
-7. **Hard cap check**: ARS > 6.0 AND A2 ≥ 9 checks
+7. **Hard cap check**: ARS > 6.5 AND A2 ≥ 9 checks (v3.7 thresholds; ARS 6.0–6.5 = WATCHLIST band, eligible with 15% per-vault cap)
 8. **Final decision**: APPROVED / EXCLUDED + concentration cap per Section 5 Rule 3
 9. **Key strengths** and **Key risks** (3-6 bullets each)
 10. **Sources**: primary + secondary + incident databases
