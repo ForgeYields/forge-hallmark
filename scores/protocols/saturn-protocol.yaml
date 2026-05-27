@@ -30,10 +30,8 @@ criteria:
 # - C2 updated 8 → 6: TVL grew $64.5M (2026-04-25) → $124.32M (2026-05-27), +93% in 32d.
 #   Now in $100M-$250M band; current = ATH; no drawdown / ATH modifiers.
 # - C1=5, C4=4.10, C5=6, C6=3 unchanged from 2026-05-08 baseline.
-# - PRS: 5.47 → 5.27 (-0.20 from C2 band-shift). Verdict APPROVED; 30% cap (band 4.1-5.5).
 # - WATCHLIST: Saturn team committed (2026-05-07) to on-chain Timelock + Safe within
 #   "~1 week"; 19 days overdue as of 2026-05-27. Re-verify monthly; escalate at 60-day
 #   overdue mark (2026-07-08) for potential C3 downgrade 7 → 8.
 # - See /private/assessments/saturn_protocol_l1_assessment.md (v2.0, 2026-05-27) for full
-#   rationale; v3.9 attestation precedent referenced in usdat_l2_assessment.md line 42 +
 #   strata_l1_assessment_v39_refresh.md line 286 + downstream L3 assessments.

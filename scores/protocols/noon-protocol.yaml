@@ -19,7 +19,6 @@ criteria:
   c4: 3.9
   c5: 8
   c6: 5
-# v4.3 re-assessment. Verdict: EXCLUDED — C3 = 9 hard cap (v3.9 Tier A).
 # - Two single EOAs (`0x173806...` deployer + `0xcC2447...` delegate-proposer) hold
 #   REBASE_MANAGER_ROLE on sUSN — drain-vector / NAV-modifier role on $20.4M
 #   staked vault. Re-verified on-chain 2026-05-27 via publicnode.com RPC.
@@ -33,5 +32,3 @@ criteria:
 #   config undisclosed → C5 = 8.
 # - PRS 6.33 (unchanged from v3.8 — no material change in audit, TVL, incidents,
 #   smart-contract, or team dimensions). Hard cap remains the binding constraint.
-# - Cascade: HALT_L2_EXCLUDED on USN and sUSN until structural remediation.
-# See /private/assessments/noon_l1_assessment.md for full rationale.

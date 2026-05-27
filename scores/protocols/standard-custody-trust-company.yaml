@@ -24,4 +24,3 @@ criteria:
 # - v3.9 Tier A hard-cap NOT explicitly triggered because on-chain role-holder identity is UNVERIFIED (not confirmed-EOA)
 # - Conservative C3 = 5 retained via Missing Data Protocol Case 1, matching Coinbase Custody pre-/post-v4.3 treatment
 # - Mandatory escalation: any confirmed single EOA / KMS-single-key on drain-vector role at next verification → C3 = 9 → EXCLUDED
-# Score unchanged from v3.6 (PRS 4.26 → 4.26); verdict APPROVED with §5 Rule 2 30% per-vault cap retained

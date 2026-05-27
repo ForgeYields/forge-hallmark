@@ -41,11 +41,9 @@ criteria:
 #     4. Public custody disclosure? NO  — no SEC filing / regulator doc
 #   → Tier B+ NOT applicable. C3 = 9 hard cap stands.
 #   → Explicitly listed in v4.3 amendment §3.3 row 105 as non-qualifying.
-# - Verdict: EXCLUDED (per C3 hard cap, per v4.2 verdict-prevails convention).
 # - PRS 5.04 published for continuous measurement (v4.2): represents the
 #   score Agora would carry if C3 cap lifted via v3.9 Tier B attestation or
 #   on-chain migration to Safe/Timelock.
-# - Cascade: AUSD (L2) and earnAUSD-Monad (L3) cascade-EXCLUDED.
 # - C5 = 8 watchlist (unchanged from v3.7): LayerZero V2 OFT DVN X-of-Y
 #   still undisclosed (v3.6 cross-chain mandatory data point).
 # - Recovery path: see assessment §C3 — fastest unlock is MPC custodian

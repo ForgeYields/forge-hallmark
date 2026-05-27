@@ -16,7 +16,6 @@ criteria:
   c5: 7
   c6: 4
 # v4.3 re-assessment (scope: pmUSD / RWf(x) only, NOT RAAC Core V1).
-# Verdict: EXCLUDED — C3 ≥ 8 Weakest Link hard cap (governance opacity).
 # - v4.3 Tier B+ NOT eligible: BVI private company, no SEC reporting, no SOC attestation
 #   on on-chain keys, no banking-regulator license. v4.3 §2.3 explicitly excludes DeFi
 #   protocols and unregulated stablecoin issuers from Tier B+.
@@ -43,4 +42,3 @@ criteria:
 #   (88% depeg), daily close $0.6878 on 2026-05-05 (31% depeg), sustained 16% depeg
 #   through 2026-05-27 (22+ days). A2 likely escalates to 10 → L2 hard cap triggers.
 # - Aggregate pmUSD pool liquidity dropped from ~$74M (April) to ~$30M (May) — ~60% cut.
-# See /Users/sachagraff/claudeFY/assessments/raac_pmusd_l1_assessment.md for full rationale.

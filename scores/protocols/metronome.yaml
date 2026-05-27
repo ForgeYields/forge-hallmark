@@ -17,7 +17,6 @@ criteria:
   c4: 4.10
   c5: 6
   c6: 2
-# v4.3 re-assessment (39 days post v3.3). Verdict: APPROVED — no hard caps triggered.
 # Concentration cap: 15% per vault (PRS in 5.6-7.0 band per §5 Rule 2).
 # Tier B+ NOT eligible: privately-held DeFi protocol, fails all 4 v4.3 §2.1 pre-conditions
 #   (no SEC reporting, no SOC on key custody, no banking regulator, no public disclosure).
@@ -37,4 +36,3 @@ criteria:
 #      verified on-chain; if 1-of-1 DVN → C5 = 9 EXCLUDED (v3.6 hard cap).
 # Mandatory verification of items 2-3 before any L3 strategy deployment using
 #   bridged msUSD/msETH or relying on multisig governance integrity.
-# See /Users/sachagraff/claudeFY/assessments/metronome_l1_assessment.md for full rationale.

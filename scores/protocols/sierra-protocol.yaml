@@ -17,7 +17,6 @@ criteria:
   c5: 6
   c6: 6
 # v4.3 REFRESH (2026-05-27 work, dated 2026-05-22 per v4.3 standardization) —
-# supersedes v3.6 baseline 2026-04-25. Verdict: EXCLUDED (unchanged).
 # - v4.3 Tier B+ "Regulated Public Custody" carve-out EXPLICITLY NOT APPLICABLE:
 #   Sierra fails all 4 cumulative pre-conditions (privately held BVI #2180053,
 #   no SOC on on-chain key custody, no banking-regulator license, no public
@@ -43,5 +42,3 @@ criteria:
 # - Comparable to Resolv under v4.3 (same Tier A, same Tier B+ 4-of-4 fail);
 #   worse than Saturn (which cleared via Fireblocks MPC 2/3 attestation
 #   under v3.9 Tier B — Sierra has no equivalent attestation).
-# - Cascade: any L2 SIERRA or L3 Sierra-strategy is verdict: excluded via L1.
-# - See /private/assessments/sierra_l1_assessment.md for full v4.3 refresh rationale.

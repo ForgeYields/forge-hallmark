@@ -1,7 +1,4 @@
 # yaml-language-server: $schema=../../schemas/strategy.schema.json
-# EXCLUDED via L1 cascade (Reservoir C3=9 single-EOA admin) AND
-# strategy-level X2=9 (Ipor Fusion Atomist single-EOA pattern).
-# v4.1 reclassifies as Type W (Wrapper) — exclusion unchanged.
 name: ipsrBTC Ipor Fusion (Reservoir BTC Yield) Ethereum
 slug: ipsrbtc-ipor-fusion-ethereum
 chain: ethereum

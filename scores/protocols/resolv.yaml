@@ -17,15 +17,12 @@ criteria:
   c4: 9.4
   c5: 8
   c6: 4
-# v4.3 re-assessment (canonical v3.9 case). Verdict: EXCLUDED — quadruple hard cap.
 # - Tier B+ NOT eligible: privately held DeFi issuer, no SEC reporting, no SOC on key custody,
 #   no banking regulator, no public custody disclosure. v4.3 §2.3 explicitly excludes DeFi.
 # - C3 = 9 (v3.9 Tier A): AWS-KMS single-key on SERVICE_ROLE drain-vector (mint + price-setter).
 #   Resolv postmortem explicitly declines to disclose remediation specifics → strict reading
 #   default = 9. No Tier B (MPC attestation) or Tier C (on-chain Timelock + Safe) invoked.
-# - C4 composite 9.40; C4a = 10 triggers v3.5 max(C4a, C4) ≥ 8 rule independently. Cascade
 #   > $50M (Resolv $34M direct + Fluid $19.3M+ + Morpho ~$6M); compensation partial; no
 #   remediation plan ~2 months post-exploit (Gauntlet on record); most operations still paused.
 # - PRS 7.53 > 7.0 (quadruple trigger).
 # - TVL: $30.1M (−47.9% over 30d; 4.4% of ATH); further leg-down on 2026-05-12 ($58M → $34M).
-# See /private/assessments/resolv_l1_assessment.md for full rationale.
