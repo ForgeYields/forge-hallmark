@@ -7,15 +7,22 @@ chains:
   - base
   - optimism
   - avalanche
+  - polygon
+  - solana
 category: regulated-fiat-backed-stablecoin-issuer
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-prs: 3.6
+  date: '2026-05-22'
+  methodology_version: v4.3
+prs: 4.0
 criteria:
   c1: 3
   c2: 1
-  c3: 5
+  c3: 7
   c4: 3
   c5: 7
   c6: 1
+# C3 re-scored under v4.3 Tier B+ "Regulated Public Custody" carve-out:
+# - Circle qualifies on all 4 pre-conditions: CRCL/NYSE + Deloitte SOC 1 Type 2 (Circle Mint key custody) + NYDFS BitLicense + 10-K filed
+# - v3.9 Tier A hard cap (C3=9) suspended; rest of governance posture scored normally
+# - Net: C3 9 → 7, PRS 4.40 → 4.00, verdict EXCLUDED → APPROVED with 50% per-vault cap
+# - See methodology/amendments/v43-amendment.md

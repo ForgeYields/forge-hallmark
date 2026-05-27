@@ -8,13 +8,13 @@ chains:
   - monad
 category: regulated-custodial-btc-wrapper-issuer
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-prs: 4.03
+  date: '2026-05-22'
+  methodology_version: v4.2
+prs: 3.97
 criteria:
   c1: 4
   c2: 1
   c3: 5
-  c4: 3.9
+  c4: 3.6
   c5: 7
   c6: 1

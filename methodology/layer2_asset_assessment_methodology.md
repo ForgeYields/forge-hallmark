@@ -1,6 +1,6 @@
 # Layer 2 — Asset Risk Assessment Methodology
 
-**Current methodology version:** v4.2 (May 2026)
+**Current methodology version:** v4.3 (May 2026)
 **Last L2-specific amendment:** v3.10 (A4 RWA Backing Class Taxonomy T/C/I, 2026-05-08)
 **L2 rubric base:** unchanged since v3.4. Subsequent L2-specific changes: v3.7 (A3 Async Exit Credit + WATCHLIST band 6.0–6.5 + ARS hard cap raised from 6.0 to 6.5) and v3.10 (A4 Class T/C/I taxonomy). §0 cascade gate inherits v3.5/v3.6 L1 hard caps.
 **Date:** Last meaningful edit 2026-05-08 (v3.10); thresholds revalidated against v4.1.

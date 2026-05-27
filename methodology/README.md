@@ -1,6 +1,6 @@
 # The Hallmark — Methodology
 
-**Current version:** v4.2 (May 2026) · see [Amendments timeline](#amendments-timeline) for the full evolution.
+**Current version:** v4.3 (May 2026) · see [Amendments timeline](#amendments-timeline) for the full evolution.
 
 The Hallmark is a four-layer risk methodology for evaluating DeFi yield strategies. Every chain, protocol, asset, and yield strategy in ForgeYields vaults receives a numerical score derived from this framework.
 
@@ -28,6 +28,7 @@ Formulas                               → see formulas.md
 | v4.0 | 2026-05-18 | Layer 0 Chain Risk Score (CRS, N1–N5 rubric) + integration via existing Multi-Protocol Rule | Monad / HyperEVM / Plasma chain-novelty under-rating |
 | v4.1 | 2026-05-18 | L3 Type W (Wrapper Vault, X1–X5 rubric) for delegated-execution strategies | Ipor Fusion + MetaMorpho-style two-layer trust model |
 | v4.2 | 2026-05-22 | L3 procedural clarification: GRS always computed; verdict derived separately (cascade exclusion ≠ skip computation) | Live score files (e.g., pendle-pt-apyusd-18jun2026) carried full GRS despite cascade exclusion; methodology text contradicted production reality |
+| v4.3 | 2026-05-22 | L1 C3 Tier B+ "Regulated Public Custody" carve-out — narrow exception to v3.9 single-EOA hard cap for SEC-listed issuers with SOC 1/2 attestation explicitly covering on-chain key custody + active banking-regulator license + public custody disclosure (4 cumulative pre-conditions) | v3.9 systemic false positive caught Circle/Coinbase/BitGo despite NYSE-listed status + SOC + NYDFS/OCC supervision — would cascade-exclude USDC and disable fyUSDC vault on a methodology gap, not a substantive risk increase |
 
 Full amendment text: see `amendments/` subdirectory.
 

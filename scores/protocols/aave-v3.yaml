@@ -3,15 +3,35 @@ name: Aave V3
 slug: aave-v3
 chains:
   - ethereum
+  - arbitrum
+  - optimism
+  - polygon
+  - base
+  - avalanche
+  - bnb
+  - sonic
+  - celo
+  - metis
+  - soneium
+  - linea
+  - scroll
+  - megaeth
+  - zksync-era
+  - mantle
+  - plasma
+  - fantom
+  - harmony
+  - xdai
+  - x-layer
 category: lending-borrowing
 assessment:
-  date: '2026-04-10'
-  methodology_version: v3.1
-prs: 2.64
+  date: '2026-05-22'
+  methodology_version: v4.2
+prs: 2.84
 criteria:
   c1: 1
-  c2: 3
+  c2: 4
   c3: 2
   c4: 5.2
   c5: 3
-  c6: 2
+  c6: 3

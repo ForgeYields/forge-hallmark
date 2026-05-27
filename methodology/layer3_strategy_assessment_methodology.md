@@ -1,6 +1,6 @@
 # Layer 3 Strategy Assessment — Field Guide
 
-**Current methodology version:** v4.2 (May 2026)
+**Current methodology version:** v4.3 (May 2026)
 **Last L3-specific amendments:** v3.8 (Recursive Strategy Collateral Rule, 2026-05-07) · v4.1 (Type W Wrapper Vault X1–X5 rubric, 2026-05-18)
 **L3 core structure:** unchanged since v3.4. Cascade gate (§0.2.3) inherits L1/L2 hard caps including v3.5/v3.6 L1 changes and **v3.7 L2 ARS > 6.5 cap with 6.0–6.5 WATCHLIST band**. Section 5W (Type W Wrapper Vault) added in v4.1.
 **Date:** Last meaningful edit 2026-05-18 (v4.1).

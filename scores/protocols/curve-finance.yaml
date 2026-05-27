@@ -3,14 +3,21 @@ name: Curve Finance
 slug: curve-finance
 chains:
   - ethereum
+  - arbitrum
+  - base
+  - fraxtal
+  - polygon
+  - avalanche
+  - optimism
+  - gnosis
 category: dex-amm
 assessment:
-  date: '2026-04-10'
-  methodology_version: v3.1
-prs: 3.79
+  date: '2026-05-22'
+  methodology_version: v4.2
+prs: 3.49
 criteria:
   c1: 3
-  c2: 6
+  c2: 3
   c3: 3
   c4: 5.2
   c5: 4

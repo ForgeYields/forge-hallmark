@@ -3,10 +3,14 @@ name: Fluid
 slug: fluid
 chains:
   - ethereum
+  - arbitrum
+  - base
+  - polygon
+  - plasma
 category: unified-liquidity-layer
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
+  date: '2026-05-22'
+  methodology_version: v4.2
 prs: 3.34
 criteria:
   c1: 3

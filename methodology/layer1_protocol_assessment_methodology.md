@@ -1,6 +1,6 @@
 # Layer 1 — Protocol Risk Assessment Methodology
 
-**Current methodology version:** v4.2 (May 2026)
+**Current methodology version:** v4.3 (May 2026)
 **Last L1-specific amendment:** v3.9 (C3 Custody Mode Recognition / MPC threshold-signature, 2026-05-07)
 **L1 rubric base:** unchanged since v3.4. Subsequent L1-specific changes: v3.5 (C4 max rule), v3.6 (C5 cross-chain DVN + C1 audit coverage), v3.9 (C3 MPC custody recognition). v4.0 adds Layer 0 chain-risk dependency feeding PR via Multi-Protocol Rule (no L1 rubric changes).
 **Date:** Last meaningful edit 2026-05-07 (v3.9).
@@ -147,6 +147,8 @@ Assessor MUST perform on-chain reads for every critical role listed below. Readi
      Rationale for the ≥ 4 absolute floor in clause (b): 4 separate parties required for collusion is a substantive barrier even if the % ratio is lower; this preserves the methodology's intent (catching effectively-single-key patterns and small-multisig vulnerabilities) without over-penalizing wider-N multisigs that still require many parties to act.
 
    - **Single EOA OR KMS-single-key (e.g., AWS-KMS, single-device MPC)** on a critical *drain-vector* role (mint, burn, upgrade, price-setter, redemption-rule, blacklister) → **C3 = 9 automatic trigger → EXCLUDED** regardless of timelock (single-key compromise = single-point-of-failure regardless of delay window).
+
+   - **Tier B+ exception — Regulated Public Custody (v4.3, 2026-05-22):** The Tier A "single EOA / KMS-single-key on drain-vector role → C3 = 9" hard cap above is **suspended for issuers satisfying ALL FOUR cumulative pre-conditions** of v4.3 §2.1: (1) public company with SEC reporting (or equivalent jurisdiction), (2) SOC 1 Type 2 or SOC 2 Type 2 attestation within 18 months **explicitly covering on-chain key custody operations** (generic IT SOC does NOT qualify), (3) active banking-regulator license (NYDFS / OCC / FDIC / equivalent foreign prudential regulator), (4) public custody disclosure (SEC filing or attestation establishing controls exist). Qualifying issuers are scored on the rest of the governance posture per the standard rubric. Currently eligible: `circle-internet-financial`, `coinbase-custody-trust-company`. BitGo pending SOC scope verification. **Does NOT apply to DeFi protocols, unregulated stablecoin issuers, or any entity failing ≥1 pre-condition.** See `amendments/v43-amendment.md` for full rationale.
 
    - **Single EOA on a *DoS-vector* role (pause only, when pause cannot drain or upgrade)** → noted as a residual concern in the assessment, but **not auto-disqualifying**. This is a defensible industry-standard pattern (Aave Guardian, Compound pause guardian, Re Protocol PAUSER on ICL) — fast emergency-response prioritized over multisig coordination overhead. Pause has a DoS blast radius but cannot drain user funds.
 

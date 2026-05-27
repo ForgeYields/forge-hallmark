@@ -3,15 +3,18 @@ name: Convex Finance
 slug: convex-finance
 chains:
   - ethereum
+  - arbitrum
+  - polygon
+  - fraxtal
 category: yield-optimizer-crv-boosting
 assessment:
-  date: '2026-04-13'
-  methodology_version: v3.4
-prs: 5.39
+  date: '2026-05-22'
+  methodology_version: v4.2
+prs: 4.89
 criteria:
   c1: 5
-  c2: 7
-  c3: 7
+  c2: 4
+  c3: 6
   c4: 2.7
   c5: 6
   c6: 6

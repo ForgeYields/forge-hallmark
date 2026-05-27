@@ -3,11 +3,26 @@ name: Kelp DAO (rsETH)
 slug: kelp-dao
 chains:
   - ethereum
+  - arbitrum
+  - optimism
+  - base
+  - manta
+  - mode
+  - blast
+  - scroll
+  - linea
+  - x-layer
+  - zksync-era
+  - zircuit
+  - swellchain
+  - hemi
+  - berachain
+  - sonic
 category: liquid-restaking
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-prs: 5.8
+  date: '2026-05-22'
+  methodology_version: v4.2
+prs: 5.80
 criteria:
   c1: 7
   c2: 1
