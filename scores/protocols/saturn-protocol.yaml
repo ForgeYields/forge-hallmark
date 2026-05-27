@@ -5,13 +5,35 @@ chains:
   - ethereum
 category: yield-bearing-stablecoin-rwa-backed
 assessment:
-  date: '2026-04-25'
-  methodology_version: v3.6
-prs: 5.47
+  date: '2026-05-27'
+  methodology_version: v4.3
+prs: 5.27
 criteria:
   c1: 5
-  c2: 8
+  c2: 6
   c3: 7
   c4: 4.1
   c5: 6
   c6: 3
+# v4.3 REFRESH (2026-05-27) — supersedes v3.9 update 2026-05-08:
+# - v4.3 Tier B+ "Regulated Public Custody" carve-out EXPLICITLY NOT APPLICABLE:
+#   Saturn fails all 4 cumulative pre-conditions (privately held, no SOC on on-chain key
+#   custody, no banking-regulator license, no public custody disclosure) AND is a DeFi
+#   protocol per v4.3 §2.3 explicit exclusion. Tier B+ applies only to regulated public
+#   fiat-backed issuers (Circle, Coinbase Custody, BitGo).
+# - v3.9 Tier B (MPC + Tier 1 custodian attestation) RETAINED from 2026-05-08 baseline:
+#   Fireblocks MPC 2/3 outside-initiator on Saturn Deployer EOA 0x610182...616820
+#   (still holds DEFAULT_ADMIN_ROLE on USDat + sUSDat + WithdrawalQueueERC721 + USDat
+#   ProxyAdmin owner, on-chain re-verified 2026-05-27). Custodian = Fireblocks = Tier 1
+#   per v3.9 §3.2 quality matrix → C3 = 7. Attestation date 2026-05-08; within v3.9 §3.2
+#   6-month staleness limit; refresh required by 2026-11-08.
+# - C2 updated 8 → 6: TVL grew $64.5M (2026-04-25) → $124.32M (2026-05-27), +93% in 32d.
+#   Now in $100M-$250M band; current = ATH; no drawdown / ATH modifiers.
+# - C1=5, C4=4.10, C5=6, C6=3 unchanged from 2026-05-08 baseline.
+# - PRS: 5.47 → 5.27 (-0.20 from C2 band-shift). Verdict APPROVED; 30% cap (band 4.1-5.5).
+# - WATCHLIST: Saturn team committed (2026-05-07) to on-chain Timelock + Safe within
+#   "~1 week"; 19 days overdue as of 2026-05-27. Re-verify monthly; escalate at 60-day
+#   overdue mark (2026-07-08) for potential C3 downgrade 7 → 8.
+# - See /private/assessments/saturn_protocol_l1_assessment.md (v2.0, 2026-05-27) for full
+#   rationale; v3.9 attestation precedent referenced in usdat_l2_assessment.md line 42 +
+#   strata_l1_assessment_v39_refresh.md line 286 + downstream L3 assessments.

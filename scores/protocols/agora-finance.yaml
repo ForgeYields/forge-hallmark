@@ -6,19 +6,47 @@ chains:
   - arbitrum
   - polygon
   - avalanche
+  - solana
+  - sui
+  - mantle
   - monad
   - plasma
+  - bsc
+  - immutable-zkevm
   - katana
-  - mantle
+  - core
+  - plume
 category: regulated-fiat-backed-stablecoin-issuer
 assessment:
-  date: '2026-05-06'
-  methodology_version: v3.7
-prs: 3.94
+  date: '2026-05-27'
+  methodology_version: v4.3
+prs: 5.04
 criteria:
   c1: 2
   c2: 6
-  c3: 5
+  c3: 9
   c4: 3.2
-  c5: 6
+  c5: 8
   c6: 3
+# v4.3 reassessment (2026-05-27):
+# - C3 raised from 5 (v3.7 Circle-precedent override) to 9 under v3.9 Tier A:
+#   single EOA 0x68898B77EbF7b55dCA8A2e62d6Fd74959a2930e2 holds ProxyAdmin
+#   ownership over AUSD ERC-1967 proxy = drain-vector upgrade authority
+#   (on-chain re-verified 2026-05-27 via publicnode RPC: eth_getCode = 0x,
+#   nonce = 17).
+# - v4.3 Tier B+ "Regulated Public Custody" exemption tested 4-of-4:
+#     1. Public company? NO  — privately held (Paradigm Series A backed)
+#     2. SOC over on-chain keys? NO  — Grant Thornton attests reserves only
+#     3. Banking-regulator license? NO  — OCC trust charter still "Applied"
+#     4. Public custody disclosure? NO  — no SEC filing / regulator doc
+#   → Tier B+ NOT applicable. C3 = 9 hard cap stands.
+#   → Explicitly listed in v4.3 amendment §3.3 row 105 as non-qualifying.
+# - Verdict: EXCLUDED (per C3 hard cap, per v4.2 verdict-prevails convention).
+# - PRS 5.04 published for continuous measurement (v4.2): represents the
+#   score Agora would carry if C3 cap lifted via v3.9 Tier B attestation or
+#   on-chain migration to Safe/Timelock.
+# - Cascade: AUSD (L2) and earnAUSD-Monad (L3) cascade-EXCLUDED.
+# - C5 = 8 watchlist (unchanged from v3.7): LayerZero V2 OFT DVN X-of-Y
+#   still undisclosed (v3.6 cross-chain mandatory data point).
+# - Recovery path: see assessment §C3 — fastest unlock is MPC custodian
+#   attestation (Fireblocks/Anchorage/Coinbase Custody) per v3.9 Tier B.

@@ -3,15 +3,38 @@ name: Global Dollar Network (Paxos USDG)
 slug: global-dollar-network
 chains:
   - ethereum
+  - solana
+  - ink
+  - x-layer
+  - hyperliquid
 category: regulated-fiat-backed-stablecoin-centralised-stable-value-asset
 assessment:
-  date: '2026-04-30'
-  methodology_version: v3.6
-prs: 3.81
+  date: '2026-05-22'
+  methodology_version: v4.3
+prs: 3.87
 criteria:
   c1: 2
   c2: 1
   c3: 6
-  c4: 4.3
+  c4: 4.6
   c5: 7
   c6: 1
+# v4.3 refresh (2026-05-22) of v3.6 baseline (2026-04-30):
+# - v4.3 Tier B+ Regulated Public Custody check: FAILS — Paxos Trust is privately held
+#   (no SEC reporting); SOC scope on on-chain key custody not publicly disclosed.
+#   Pre-conditions (1) and (2) of v4.3 §2.1 not satisfied. Standard v3.9 Tier A applies.
+# - v3.9 Tier A check: PASSES — on-chain verification (2026-05-22) confirms drain-vector
+#   role owner 0x9036566eAa5F83E0b9E1161C6c602b0Adf997654 is a TimelockController
+#   contract (13,511 bytes bytecode; getMinDelay() = 10800 sec / 3h), NOT a single
+#   EOA / KMS single-key. C3=9 hard cap not triggered. Tier C "On-Chain Verifiable".
+# - C4b 5 → 6: +1.2 months operational age (17.5 → 18.7 months) + OCC National Trust
+#   Charter conversion (Dec 12, 2025) ratified federal supervision.
+# - C4 composite 4.30 → 4.60 from C4a=4 (unchanged) and C4b 5→6.
+# - NYDFS $48.5M settlement (Aug 7, 2025) for BUSD-era AML/KYC failures newly
+#   documented in C4a; conduct historical, customer harm zero, OCC ratified
+#   post-remediation framework → C4a stays at 4.
+# - Aggregate TVL (DefiLlama 2026-05-22): $2.615B across 5 chains (X Layer 52% / Solana
+#   25% / Ethereum 18% / Ink 4% / Hyperliquid <0.1%). C2=1 unchanged.
+# - PRS 3.81 → 3.87 (+0.06 from C4 increment). Status: APPROVED, 50% per-vault cap
+#   (PRS in 2.6-4.0 band per §5 Rule 2). Mandatory L2 USDG assessment required before
+#   any vault deployment (dual-assessment rule, §3.0).

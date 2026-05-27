@@ -3,10 +3,14 @@ name: Ankr Staking
 slug: ankr-staking
 chains:
   - ethereum
-category: liquid-staking-node-infrastructure
+  - bsc
+  - polygon
+  - avalanche
+  - flow
+category: liquid-staking
 assessment:
-  date: '2026-04-17'
-  methodology_version: v3.4
+  date: '2026-05-22'
+  methodology_version: v4.3
 prs: 6.39
 criteria:
   c1: 7

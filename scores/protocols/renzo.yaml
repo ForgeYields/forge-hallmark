@@ -3,15 +3,27 @@ name: Renzo
 slug: renzo
 chains:
   - ethereum
+  - arbitrum
+  - base
+  - optimism
+  - linea
+  - blast
+  - bnb
+  - mode
+  - zircuit
+  - fraxtal
+  - sei
+  - solana
+  - monad
 category: liquid-restaking
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-prs: 4.61
+  date: '2026-05-22'
+  methodology_version: v4.3
+prs: 4.81
 criteria:
   c1: 3
-  c2: 6
-  c3: 4
-  c4: 6.8
+  c2: 10
+  c3: 3
+  c4: 6.80
   c5: 6
   c6: 2

@@ -2,17 +2,46 @@
 name: Sierra Protocol
 slug: sierra-protocol
 chains:
-  - ethereum
   - avalanche
+  - ethereum
 category: liquid-yield-token-rwa-plus-defi-yield-backed-yield-bearing-stablecoin
 assessment:
-  date: '2026-04-25'
-  methodology_version: v3.6
-prs: 7
+  date: '2026-05-22'
+  methodology_version: v4.3
+prs: 6.94
 criteria:
   c1: 8
   c2: 8
   c3: 9
-  c4: 4.5
+  c4: 4.20
   c5: 6
   c6: 6
+# v4.3 REFRESH (2026-05-27 work, dated 2026-05-22 per v4.3 standardization) —
+# supersedes v3.6 baseline 2026-04-25. Verdict: EXCLUDED (unchanged).
+# - v4.3 Tier B+ "Regulated Public Custody" carve-out EXPLICITLY NOT APPLICABLE:
+#   Sierra fails all 4 cumulative pre-conditions (privately held BVI #2180053,
+#   no SOC on on-chain key custody, no banking-regulator license, no public
+#   custody disclosure) AND is a DeFi LYT issuer per v4.3 §2.3 explicit
+#   exclusion. Tier B+ applies only to regulated public fiat-backed issuers
+#   (Circle, Coinbase Custody, BitGo).
+# - C3 = 9 retained via v3.9 Tier A hard cap: PROTOCOL_ADMIN, ISSUER_ROLE,
+#   OPERATOR_ROLE, AUTOMATION_ROLE, FEE_COLLECTOR, treasuryWalletAddr all on
+#   distinct single EOAs (no multisig, no timelock). On-chain re-verified
+#   2026-05-27 via Avalanche publicnode RPC: poolAdmin()=0x20cd...8005,
+#   issuer()=0xb841dbcb..., treasuryWalletAddr()=0xbc7c0b...
+# - C1 = 8 retained: v3.6 audit-coverage gap (MyOFT Ethereum side +
+#   LytPoolOFTAdapter Avalanche side both still unaudited 9 months post
+#   Cantina LytPool engine audit).
+# - C4 updated 4.50 → 4.20: C4a=3 unchanged (zero exploits, no bug bounty),
+#   C4b 9 → 7 (operational age crossed 6-month boundary 2026-05-12; now
+#   195 days = 6.41 months in the 6-12 month band).
+# - C2 = 8 unchanged: TVL grew $25.98M → $34.29M (+32%) but stays in
+#   $10M-$100M band; ATH = current; no drawdown/ATH modifiers.
+# - C5 = 6, C6 = 6 unchanged.
+# - PRS: 7.00 → 6.94 (−0.06) — sole driver C4b band-shift; structurally
+#   identical risk profile (C3 hard cap remains the binding trigger).
+# - Comparable to Resolv under v4.3 (same Tier A, same Tier B+ 4-of-4 fail);
+#   worse than Saturn (which cleared via Fireblocks MPC 2/3 attestation
+#   under v3.9 Tier B — Sierra has no equivalent attestation).
+# - Cascade: any L2 SIERRA or L3 Sierra-strategy is verdict: excluded via L1.
+# - See /private/assessments/sierra_l1_assessment.md for full v4.3 refresh rationale.

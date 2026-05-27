@@ -5,13 +5,13 @@ chains:
   - ethereum
 category: lending-curve-ecosystem
 assessment:
-  date: '2026-04-13'
-  methodology_version: v3.3
+  date: '2026-05-22'
+  methodology_version: v4.3
 prs: 6.03
 criteria:
   c1: 5
   c2: 8
   c3: 7
-  c4: 6.4
+  c4: 6.40
   c5: 6
   c6: 4

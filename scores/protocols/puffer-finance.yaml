@@ -13,11 +13,11 @@ chains:
   - scroll
 category: liquid-restaking-tokenon-eigenlayer
 assessment:
-  date: '2026-05-06'
-  methodology_version: v3.7
-prs: 4.37
+  date: '2026-05-27'
+  methodology_version: v4.3
+prs: 4.62
 criteria:
-  c1: 3
+  c1: 4
   c2: 10
   c3: 3
   c4: 4.6

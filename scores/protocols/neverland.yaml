@@ -5,13 +5,13 @@ chains:
   - monad
 category: lending
 assessment:
-  date: '2026-05-07'
-  methodology_version: v3.8
-prs: 6.16
+  date: '2026-05-27'
+  methodology_version: v4.3
+prs: 6.10
 criteria:
   c1: 5
   c2: 8
   c3: 8
-  c4: 4.8
+  c4: 4.50
   c5: 5
   c6: 8

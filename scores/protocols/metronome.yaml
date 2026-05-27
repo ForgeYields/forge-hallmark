@@ -4,15 +4,37 @@ slug: metronome
 chains:
   - ethereum
   - optimism
+  - base
 category: synthetic-assets-lending
 assessment:
-  date: '2026-04-13'
-  methodology_version: v3.3
-prs: 5.77
+  date: '2026-05-22'
+  methodology_version: v4.3
+prs: 5.87
 criteria:
   c1: 7
-  c2: 7
+  c2: 8
   c3: 7
-  c4: 4.1
+  c4: 4.10
   c5: 6
   c6: 2
+# v4.3 re-assessment (39 days post v3.3). Verdict: APPROVED — no hard caps triggered.
+# Concentration cap: 15% per vault (PRS in 5.6-7.0 band per §5 Rule 2).
+# Tier B+ NOT eligible: privately-held DeFi protocol, fails all 4 v4.3 §2.1 pre-conditions
+#   (no SEC reporting, no SOC on key custody, no banking regulator, no public disclosure).
+#   v4.3 §2.3 explicitly excludes DeFi. Standard v3.9 Tier A rules apply (and pass —
+#   structure is documented Gnosis Safe multisig, not EOA/KMS single-key).
+# Δ vs v3.3: PRS 5.77 → 5.87 (+0.10). Only change: C2 7 → 8 (v3.4 mechanical rubric
+#   correction — $10M-$100M base = 8; no ATH modifier since current/ATH 21.6% > 20%
+#   threshold; no drawdown modifier since 30d -5.4% < 20% threshold).
+# Key TVL data (DefiLlama 2026-05-27): parent $25.11M / Ethereum $17.1M / Base $6.0M
+#   / Optimism $2.0M. 30d -5.4%. ATH $116.3M (Nov 2021), current = 21.6% of ATH.
+# Three LIMITATIONS held under monitoring (30-day re-verification triggers):
+#   1. C1: Messari claim of "thorough audit" pre-LayerZero OFT (Dec 2024) not
+#      corroborated by /audits directory; if confirmed unaudited → C1 = 8 (v3.6).
+#   2. C3: Gnosis Safe address/threshold/signers/timelock not on-chain verifiable;
+#      v3.9 strict reading could escalate to 8-9 if drain-vector role on EOA.
+#   3. C5: LayerZero OFT DVN configuration (MsUSDProxyOFT / MsETHProxyOFT) not
+#      verified on-chain; if 1-of-1 DVN → C5 = 9 EXCLUDED (v3.6 hard cap).
+# Mandatory verification of items 2-3 before any L3 strategy deployment using
+#   bridged msUSD/msETH or relying on multisig governance integrity.
+# See /Users/sachagraff/claudeFY/assessments/metronome_l1_assessment.md for full rationale.

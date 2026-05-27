@@ -5,8 +5,8 @@ chains:
   - ethereum
 category: stablecoin-issuing-infrastructure
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
+  date: '2026-05-22'
+  methodology_version: v4.3
 prs: 3.33
 criteria:
   c1: 2
@@ -15,3 +15,20 @@ criteria:
   c4: 3.9
   c5: 7
   c6: 2
+# v4.3 re-score (2026-05-22):
+# - Tier B+ "Regulated Public Custody" carve-out EXPLICITLY DOES NOT APPLY:
+#   fails all 4 pre-conditions (private Swiss foundation, no SOC on key custody,
+#   no banking-regulator license, no public custody disclosure).
+#   Confirmed in v4.3 amendment §3.3 table (m-0-foundation: all ❌).
+# - Tier B+ exemption is moot regardless — M^0 has no single-EOA / KMS single-key
+#   on drain-vector roles. All economic-primitive authorities sit behind the
+#   on-chain TTG governance (15-day epoch voting) with no admin keys.
+#   v3.9 Tier A hard cap NOT triggered architecturally.
+# - v3.6 cross-chain check: M Portal uses Wormhole 13-of-19 Guardian set
+#   (explicitly compliant per v3.6 §C5 Part A). No C5 elevation.
+# - C5 = 7 floor maintained from v3.4 (RWA off-chain custody + Validator
+#   attestation dependency).
+# - TVL: $309.7M (Apr) → $345.9M (May), 30d +17.7%, ATH 36.2%. C2 band unchanged.
+# - Op. age 19.2 months (1.60 years). C4b = 6 (1-2 year band).
+# - Scores unchanged from 2026-04-21 v3.4 assessment. PRS 3.33 → APPROVED.
+# - See private/assessments/m_0_foundation_l1_assessment.md for full rationale.

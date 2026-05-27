@@ -3,15 +3,44 @@ name: RAAC / pmUSD
 slug: raac-pmusd
 chains:
   - ethereum
-category: rwa-gold-backed-stablecoinfork
+category: rwa-gold-backed-stablecoin
 assessment:
-  date: '2026-04-18'
-  methodology_version: v3.4
-prs: 6.44
+  date: '2026-05-22'
+  methodology_version: v4.3
+prs: 6.19
 criteria:
-  c1: 7
+  c1: 6
   c2: 6
   c3: 9
   c4: 4.2
   c5: 7
   c6: 4
+# v4.3 re-assessment (scope: pmUSD / RWf(x) only, NOT RAAC Core V1).
+# Verdict: EXCLUDED — C3 ≥ 8 Weakest Link hard cap (governance opacity).
+# - v4.3 Tier B+ NOT eligible: BVI private company, no SEC reporting, no SOC attestation
+#   on on-chain keys, no banking-regulator license. v4.3 §2.3 explicitly excludes DeFi
+#   protocols and unregulated stablecoin issuers from Tier B+.
+# - C3 = 9 (v3.9 Tier A): 2-of-3 Gnosis Safe with 3 anonymous EOA signers, NO TimelockController,
+#   on-chain re-verified 2026-05-22 (unchanged since 2026-04-18). ProxyAdmin 0x89ab60d8...,
+#   Safe 0xca3144aa..., owners 0x48c26faf / 0xbe07a717 / 0x30a7da33 (all unlabeled).
+#   2/3 = 67% passes ratio clause (a) but 2 absolute < 4 fails clause (b);
+#   methodology recommends timelock when signers < 3 distinct entities — RAAC has neither.
+# - C1 = 6 (improved from 7): new 2026-03 Pashov PSM audit closes the peg-defense
+#   coverage gap. 4 RWf(x)-scoped audits total (V1, V2, V3, PSM), all from single firm
+#   (Pashov), no Tier-1 review, no Immunefi bug bounty, no formal verification.
+# - C2 = 6: TVL $118.8M (−5.4% 30d, 82% of ATH) — Token Blender XAU collateral has held
+#   through the May depeg event.
+# - C4 composite 4.20 (C4a 3, C4b 7): zero confirmed smart-contract exploits;
+#   ~9 months operational. Peg event (NOT exploit) captured at L2 A2, not L1 C4a per §3.0.
+# - C5 = 7: off-chain dependency floor binds. I-ON Digital filed late 10-K (NT 10-K
+#   2026-03-31) showing $433K rev / $3.2M opex / going-concern persists + new
+#   material weaknesses in ICFR disclosed. PSM tight coupling to Sky/sUSDS adds
+#   propagation surface but is itself now audited.
+# - C6 = 4: Kevin Rusher (CEO) partially doxxed, no prior DeFi track record;
+#   Michael Egorov advisor; BVI offshore; no public team statement on the May depeg.
+# - PRS 6.19 (below 7.0 PRS cap) but C3=9 hard cap binds.
+# - Cross-reference: pmUSD L2 needs urgent re-scoring — intraday low $0.1162 on 2026-05-04
+#   (88% depeg), daily close $0.6878 on 2026-05-05 (31% depeg), sustained 16% depeg
+#   through 2026-05-27 (22+ days). A2 likely escalates to 10 → L2 hard cap triggers.
+# - Aggregate pmUSD pool liquidity dropped from ~$74M (April) to ~$30M (May) — ~60% cut.
+# See /Users/sachagraff/claudeFY/assessments/raac_pmusd_l1_assessment.md for full rationale.

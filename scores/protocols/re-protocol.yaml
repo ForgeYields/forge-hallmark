@@ -8,15 +8,16 @@ chains:
   - avalanche
   - bnb
   - katana
+  - ink
 category: rwa-on-chain-reinsurance-yield-bearing-stablecoin
 assessment:
-  date: '2026-04-17'
-  methodology_version: v3.4
-prs: 4.83
+  date: '2026-05-22'
+  methodology_version: v4.3
+prs: 5.43
 criteria:
   c1: 4
-  c2: 6
-  c3: 5
+  c2: 4
+  c3: 9
   c4: 4.9
   c5: 7
   c6: 2

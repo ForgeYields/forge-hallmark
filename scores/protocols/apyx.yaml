@@ -3,15 +3,16 @@ name: APYX
 slug: apyx
 chains:
   - ethereum
-category: yield-protocol
+  - base
+category: yield-bearing-stablecoin
 assessment:
-  date: '2026-04-14'
-  methodology_version: v3.4
-prs: 5.52
+  date: '2026-05-22'
+  methodology_version: v4.3
+prs: 4.32
 criteria:
   c1: 3
-  c2: 6
-  c3: 9
+  c2: 2
+  c3: 5
   c4: 5.1
   c5: 7
   c6: 3

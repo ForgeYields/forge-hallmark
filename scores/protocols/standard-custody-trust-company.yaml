@@ -5,8 +5,8 @@ chains:
   - ethereum
 category: regulated-fiat-backed-stablecoin-issuer
 assessment:
-  date: '2026-04-24'
-  methodology_version: v3.6
+  date: '2026-05-27'
+  methodology_version: v4.3
 prs: 4.26
 criteria:
   c1: 5
@@ -15,3 +15,13 @@ criteria:
   c4: 3.3
   c5: 7
   c6: 2
+# v4.3 Tier B+ "Regulated Public Custody" eligibility analysis:
+# - Pre-condition 1 (public company): FAILS — Ripple Labs is privately held; President Monica Long (Jan 2026) publicly ruled out 2026 IPO
+# - Pre-condition 2 (SOC over on-chain key custody): FAILS — no public SOC 1/2 for SCTC; BPM monthly attestations cover reserves only
+# - Pre-condition 3 (banking regulator): PASSES — NYDFS limited purpose trust charter (May 4, 2021)
+# - Pre-condition 4 (public custody disclosure): PARTIAL — NYDFS supervisory regime is public but key-custody framework documentation gap mirrors #2
+# Result: Tier B+ NOT activated → standard v3.9 Tier A rule applies
+# - v3.9 Tier A hard-cap NOT explicitly triggered because on-chain role-holder identity is UNVERIFIED (not confirmed-EOA)
+# - Conservative C3 = 5 retained via Missing Data Protocol Case 1, matching Coinbase Custody pre-/post-v4.3 treatment
+# - Mandatory escalation: any confirmed single EOA / KMS-single-key on drain-vector role at next verification → C3 = 9 → EXCLUDED
+# Score unchanged from v3.6 (PRS 4.26 → 4.26); verdict APPROVED with §5 Rule 2 30% per-vault cap retained

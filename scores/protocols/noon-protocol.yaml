@@ -9,8 +9,8 @@ chains:
   - sophon
 category: synthetic-yield-bearing-stablecoin
 assessment:
-  date: '2026-05-07'
-  methodology_version: v3.8
+  date: '2026-05-22'
+  methodology_version: v4.3
 prs: 6.33
 criteria:
   c1: 5
@@ -19,3 +19,19 @@ criteria:
   c4: 3.9
   c5: 8
   c6: 5
+# v4.3 re-assessment. Verdict: EXCLUDED — C3 = 9 hard cap (v3.9 Tier A).
+# - Two single EOAs (`0x173806...` deployer + `0xcC2447...` delegate-proposer) hold
+#   REBASE_MANAGER_ROLE on sUSN — drain-vector / NAV-modifier role on $20.4M
+#   staked vault. Re-verified on-chain 2026-05-27 via publicnode.com RPC.
+# - Tier B+ NOT eligible: privately-held DeFi issuer, no SEC reporting, no SOC on
+#   key custody, no banking regulator, no public custody disclosure. v4.3 §2.3
+#   explicitly excludes DeFi protocols regardless of pre-condition status.
+# - Tier B (MPC attestation mitigation) NOT invoked: no Tier-1 custodian attestation
+#   for REBASE_MANAGER_ROLE keys disclosed in Noon documentation (verified 2026-05-22).
+# - Same structural pattern as Resolv pre-exploit (single EOA on share-price-setter).
+# - Off-chain hedging dependency (Ceffu/Binance) → C5 ≥ 7 floor; Hyperlane bridge
+#   config undisclosed → C5 = 8.
+# - PRS 6.33 (unchanged from v3.8 — no material change in audit, TVL, incidents,
+#   smart-contract, or team dimensions). Hard cap remains the binding constraint.
+# - Cascade: HALT_L2_EXCLUDED on USN and sUSN until structural remediation.
+# See /private/assessments/noon_l1_assessment.md for full rationale.

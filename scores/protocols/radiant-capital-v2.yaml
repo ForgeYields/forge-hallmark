@@ -8,8 +8,8 @@ chains:
   - bnb
 category: cross-chain-money-market
 assessment:
-  date: '2026-04-17'
-  methodology_version: v3.4
+  date: '2026-05-22'
+  methodology_version: v4.3
 prs: 7.04
 criteria:
   c1: 5

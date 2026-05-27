@@ -5,13 +5,46 @@ chains:
   - ethereum
 category: yield-tranching-structured-products
 assessment:
-  date: '2026-05-08'
-  methodology_version: v3.9
-prs: 4.68
+  date: '2026-05-27'
+  methodology_version: v4.3
+prs: 4.58
 criteria:
   c1: 3
-  c2: 9
+  c2: 8
   c3: 5
-  c4: 3.4
+  c4: 3.40
   c5: 5
   c6: 6
+# v4.3 REFRESH (2026-05-27, FORA-274) — supersedes v3.9 FORA-219 (2026-05-08, PRS 4.68)
+# - v4.3 Tier B+ EXPLICITLY NOT APPLICABLE: Strata is a DeFi protocol per v4.3 §2.3
+#   explicit exclusion list ("DeFi protocols are NOT eligible for Tier B+ — the carve-out
+#   applies only to fiat-backed regulated public issuers"). Strata also fails all 4 of
+#   the §2.1 cumulative pre-conditions (private company; no SOC on key custody; no banking
+#   license; no public custody disclosure). v3.9 Tier A hard cap remains in force — but
+#   NOT triggered for Strata (no single EOA / KMS-single-key on drain-vector role).
+# - v4.0 (Chain Risk Layer): applies at L3 not L1; ethereum CRS 1.45 will enter strategy
+#   GRS via Multi-Protocol Rule at L3 cascade. No PRS impact.
+# - v4.1 (Type W): not applicable — Strata is a protocol, not a wrapper vault.
+# - v4.2 (verdict/GRS separation): procedural only; no L1 scoring impact.
+# - C2 updated 9 → 8: TVL recovered $78.48M (2026-05-08) → $95.77M (2026-05-27), +22%
+#   in 19d. 30d trend reversed −33.6% → +15.1%; current/ATH 24% → 29.3%. Both v3.9
+#   modifiers REMOVED; base 8 stands. Watchlist: re-score if TVL crosses $100M sustained
+#   (would shift base to 6 → PRS 4.38) or falls below $65M (would add ATH<20% +1).
+# - C1=3, C3=5, C4=3.40, C5=5, C6=6 ALL UNCHANGED from FORA-219 baseline.
+# - C3 on-chain re-verified 2026-05-27: TL48 minDelay=172800s (48h); Admin Safe 3/4
+#   (4 owners — same addresses); OP Safe 2/3 (3 owners — same addresses). USDat-market
+#   governance asymmetry (OP-Safe 2/3 no-timelock on drain-vector) UNCHANGED — 15%
+#   per-vault soft cap on USDat-market-specific products remains recommended until
+#   migration to TL24/TL48 chain.
+# - C4a=3 (zero exploits, no bug bounty); C4b=4.33 (~10.1mo DefiLlama, ~7.5mo tranches —
+#   band-stable in 6-12mo). Web search 2026-05-27 confirms no Strata incidents.
+# - PRS: 4.68 → 4.58 (Δ −0.10 from C2 modifier removal). Verdict APPROVED; 30% per-vault
+#   cap unchanged (4.1–5.5 band, Section 5 Rule 2).
+# - WATCHLIST: bug bounty Q2 2026 deadline 2026-06-30 (34d remaining); USDat-market
+#   governance migration 19d overdue (escalate at 60d mark ~2026-07-08); next quarterly
+#   re-score scheduled 2026-08-08.
+# - OPPORTUNITY: v3.9 Tier B attestation framework (Fireblocks MPC + Tier-1 custodian
+#   attestation, per Saturn precedent 2026-05-08) could improve C3 5 → 4 if Strata
+#   chooses to invoke it.
+# - See /private/assessments/strata_l1_assessment_v43_refresh.md (v3.0 FORA-274) for
+#   full rationale; FORA-219 v3.9 baseline at strata_l1_assessment_v39_refresh.md.

@@ -7,8 +7,8 @@ chains:
   - optimism
 category: synthetic-asset-issuer-self-repaying-loans
 assessment:
-  date: '2026-04-24'
-  methodology_version: v3.6
+  date: '2026-05-22'
+  methodology_version: v4.3
 prs: 6.26
 criteria:
   c1: 5

@@ -5,13 +5,13 @@ chains:
   - ethereum
 category: rwa-backed-stablecoin
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-prs: 5.18
+  date: '2026-05-22'
+  methodology_version: v4.3
+prs: 5.78
 criteria:
   c1: 2
   c2: 8
-  c3: 6
+  c3: 9
   c4: 7.4
   c5: 6
   c6: 3
