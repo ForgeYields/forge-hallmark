@@ -5,7 +5,7 @@ category: l1-chain
 vm_type: monad-evm
 assessment:
   date: '2026-05-18'
-  methodology_version: v4.0
+  methodology_version: v4.3
 crs: 5.95
 criteria:
   n1: 7  # Consensus & Decentralization — top-200 dPoS, MonadBFT 2f+1, slashing NOT yet implemented (log-only)

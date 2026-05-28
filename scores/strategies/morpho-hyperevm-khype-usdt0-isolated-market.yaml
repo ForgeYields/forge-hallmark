@@ -5,12 +5,12 @@ chain: hyperevm
 strategy_type: '3'
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 6.57
+  date: 2026-05-22
+  methodology_version: v4.3
+grs: 6.55
 components:
   protocol_risk: 7.17
-  asset_risk: 6.47
+  asset_risk: 6.41
   strategy_specific_risk: 6.1
 strategy_specific_criteria:
   s1: 6

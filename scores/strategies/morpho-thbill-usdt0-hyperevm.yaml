@@ -5,12 +5,12 @@ chain: hyperevm
 strategy_type: '3'
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 6.45
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 6.46
 components:
   protocol_risk: 7.17
-  asset_risk: 6.02
+  asset_risk: 6.06
   strategy_specific_risk: 6.1
 strategy_specific_criteria:
   s1: 6
@@ -24,5 +24,5 @@ dependencies:
   protocols:
     - morpho-blue
   assets:
-    - usdt0-hyperevm
     - thbill
+    - usdt0-hyperevm

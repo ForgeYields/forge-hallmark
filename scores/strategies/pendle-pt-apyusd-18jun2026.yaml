@@ -11,15 +11,15 @@ addresses:
   yt: '0x4864dcfa317b29e13e6caa04b5c37f24c79a465e'
   underlying: '0x38eeb52f0771140d10c4e9a9a72349a329fe8a6a'
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 7.14
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 6.07
 components:
-  protocol_risk: 7.01
-  asset_risk: 6.6
-  strategy_specific_risk: 7.6
+  protocol_risk: 5.1
+  asset_risk: 6.25
+  strategy_specific_risk: 6.8
 strategy_specific_criteria:
-  s1: 8
+  s1: 6
   s2: 7
   s3: 9
   s4: 5

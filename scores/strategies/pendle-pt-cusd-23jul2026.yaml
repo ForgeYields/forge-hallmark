@@ -1,17 +1,17 @@
-# yaml-language-server: $schema=../../schemas/strategie.schema.json
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
 name: Pendle PT-cUSD-23JUL2026
 slug: pendle-pt-cusd-23jul2026
 chain: ethereum
 strategy_type: 2C
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 4.96
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 4.19
 components:
-  protocol_risk: 5.55
-  asset_risk: 4.4
-  strategy_specific_risk: 4.8
+  protocol_risk: 3.44
+  asset_risk: 4.25
+  strategy_specific_risk: 4.80
 strategy_specific_criteria:
   s1: 4
   s2: 6

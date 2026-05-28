@@ -5,12 +5,12 @@ chain: starknet
 strategy_type: '1'
 vault_target: fyETH
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 4.89
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 5.47
 components:
-  protocol_risk: 6.59
-  asset_risk: 3.2
+  protocol_risk: 6.54
+  asset_risk: 5.6
   strategy_specific_risk: 4.45
 strategy_specific_criteria:
   s1: 3
@@ -23,5 +23,5 @@ dependencies:
   protocols:
     - vesu
   assets:
-    - wsteth
+    - wsteth-starknet
     - weth

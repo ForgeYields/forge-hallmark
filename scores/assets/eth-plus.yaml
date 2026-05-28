@@ -6,12 +6,12 @@ chains:
 issuer_protocol: reserve-protocol
 asset_type: lst-basket-index
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-ars: 4.3
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 4.65
 criteria:
   a1: 4
   a2: 3
-  a3: 5
+  a3: 6
   a4: 4
-  a5: 7
+  a5: 8

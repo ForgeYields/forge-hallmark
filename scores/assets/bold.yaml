@@ -6,12 +6,12 @@ chains:
 issuer_protocol: liquity-v2
 asset_type: cdp-stablecoin
 assessment:
-  date: '2026-04-26'
-  methodology_version: v3.6
-ars: 4.05
+  date: '2026-05-27'
+  methodology_version: v4.3
+ars: 3.55
 criteria:
   a1: 4
   a2: 3
-  a3: 5
+  a3: 3
   a4: 3
   a5: 6.5

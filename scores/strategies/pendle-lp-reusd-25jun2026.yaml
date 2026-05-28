@@ -1,21 +1,21 @@
-# yaml-language-server: $schema=../../schemas/strategie.schema.json
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
 name: Pendle LP-reUSD-25JUN2026
 slug: pendle-lp-reusd-25jun2026
 chain: ethereum
 strategy_type: 2B
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 5.2
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 5.78
 components:
-  protocol_risk: 6.23
-  asset_risk: 4.55
-  strategy_specific_risk: 4.7
+  protocol_risk: 6.32
+  asset_risk: 5.15
+  strategy_specific_risk: 5.7
 strategy_specific_criteria:
   s1: 4
-  s2: 4
-  s3: 6
+  s2: 6
+  s3: 8
   s4: 6
 dependencies:
   chains:

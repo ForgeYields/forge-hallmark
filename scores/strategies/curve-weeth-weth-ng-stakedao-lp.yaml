@@ -5,13 +5,13 @@ chain: ethereum
 strategy_type: 2A
 vault_target: fyETH
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 4.14
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 4.11
 components:
-  protocol_risk: 4.95
-  asset_risk: 2.93
-  strategy_specific_risk: 4.2
+  protocol_risk: 4.80
+  asset_risk: 3.01
+  strategy_specific_risk: 4.20
 strategy_specific_criteria:
   s1: 3
   s2: 5
@@ -23,6 +23,7 @@ dependencies:
   protocols:
     - curve-finance
     - stakedao
+    - ether-fi
   assets:
     - weeth
     - weth

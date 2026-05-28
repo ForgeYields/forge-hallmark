@@ -5,7 +5,7 @@ category: l1-chain
 vm_type: evm
 assessment:
   date: '2026-05-18'
-  methodology_version: v4.0
+  methodology_version: v4.3
 crs: 1.45
 criteria:
   n1: 2  # Consensus & Decentralization — 896K+ active validators, 5+ EL clients, 6 CL clients, Casper FFG finality + slashing; minor super-majority risk (Geth ~63%, Lighthouse ~53%)

@@ -8,12 +8,12 @@ chains:
 issuer_protocol: coinbase-custody-trust-company
 asset_type: lst-eth
 assessment:
-  date: '2026-05-18'
-  methodology_version: v3.10
-ars: 4.10
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 4.35
 criteria:
   a1: 3
   a2: 5
-  a3: 5
+  a3: 6
   a4: 3
   a5: 4

@@ -5,12 +5,12 @@ chain: monad
 strategy_type: '3'
 vault_target: fyWBTC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 6.7
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 6.64
 components:
   protocol_risk: 6.73
-  asset_risk: 7.04
+  asset_risk: 6.80
   strategy_specific_risk: 6.45
 strategy_specific_criteria:
   s1: 5

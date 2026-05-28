@@ -3,15 +3,27 @@ symbol: ezETH
 slug: ezeth
 chains:
   - ethereum
+  - arbitrum
+  - base
+  - optimism
+  - linea
+  - blast
+  - bnb
+  - mode
+  - zircuit
+  - fraxtal
+  - sei
+  - solana
+  - monad
 issuer_protocol: renzo
 asset_type: lrt
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-ars: 5.95
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 6.30
 criteria:
   a1: 5
   a2: 9
-  a3: 6
+  a3: 7
   a4: 4
-  a5: 4
+  a5: 5

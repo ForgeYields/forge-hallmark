@@ -1,15 +1,15 @@
-# yaml-language-server: $schema=../../schemas/strategie.schema.json
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
 name: Morpho hyETH (Index Coop / Gauntlet)
 slug: morpho-hyeth
 chain: ethereum
 strategy_type: '3'
 vault_target: fyETH
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 2.88
+  date: 2026-05-22
+  methodology_version: v4.3
+grs: 2.84
 components:
-  protocol_risk: 3.33
+  protocol_risk: 3.22
   asset_risk: 1
   strategy_specific_risk: 3.65
 strategy_specific_criteria:

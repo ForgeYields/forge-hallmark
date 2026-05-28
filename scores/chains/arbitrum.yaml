@@ -5,7 +5,7 @@ category: l2-rollup-optimistic
 vm_type: evm-equivalent
 assessment:
   date: '2026-05-18'
-  methodology_version: v4.0
+  methodology_version: v4.3
 crs: 3.25
 criteria:
   n1: 3  # Consensus & Decentralization — Stage 1 rollup, BoLD permissionless validation live since Feb 2025, anchored to Ethereum economic security; 3600 ETH bond creates economic concentration

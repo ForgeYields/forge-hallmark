@@ -4,14 +4,14 @@ slug: ynusdx
 chains:
   - ethereum
 issuer_protocol: yieldnest
-asset_type: yield-accrual-usd-vault
+asset_type: yield-bearing-stablecoin-wrapper
 assessment:
-  date: '2026-04-23'
-  methodology_version: v3.4
-ars: 5.75
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 6.35
 criteria:
-  a1: 5
+  a1: 7
   a2: 4
   a3: 7
-  a4: 6
+  a4: 7
   a5: 8

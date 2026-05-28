@@ -4,14 +4,14 @@ slug: usdt0-hyperevm
 chains:
   - hyperevm
 issuer_protocol: tether
-asset_type: stablecoin-multi-chain
+asset_type: fiat-backed-stablecoin
 assessment:
-  date: '2026-04-24'
-  methodology_version: v3.6
-ars: 4.35
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 4.55
 criteria:
   a1: 5
   a2: 4
   a3: 5
-  a4: 4
+  a4: 5
   a5: 3

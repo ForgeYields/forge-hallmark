@@ -8,19 +8,19 @@ addresses:
   vault: '0xE47358eae04719f3CF7025E95d0AD202e68BD9b2'
   underlying: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599'
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.1
-grs: 9.62
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 6.75
 components:
-  protocol_risk: 8.9
-  asset_risk: 10
-  strategy_specific_risk: 10
+  protocol_risk: 9.0
+  asset_risk: 3.45
+  strategy_specific_risk: 6.85
 strategy_specific_criteria:
-  x1: 10
-  x2: 10
-  x3: 10
-  x4: 10
-  x5: 10
+  x1: 6
+  x2: 9
+  x3: 5
+  x4: 5
+  x5: 9
 dependencies:
   chains:
     - ethereum

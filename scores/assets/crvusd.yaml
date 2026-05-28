@@ -3,15 +3,15 @@ symbol: crvUSD
 slug: crvusd
 chains:
   - ethereum
-issuer_protocol: curve-finance
+issuer_protocol: crvusd
 asset_type: cdp-stablecoin
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-ars: 4.1
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 4.35
 criteria:
   a1: 4
   a2: 4
-  a3: 4
+  a3: 5
   a4: 4
   a5: 5

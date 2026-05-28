@@ -2,16 +2,25 @@
 symbol: USDT0
 slug: usdt0
 chains:
+  - ethereum
+  - optimism
+  - polygon
+  - arbitrum
+  - berachain
+  - ink
+  - unichain
   - plasma
+  - hyperliquid
+  - avalanche
 issuer_protocol: tether
-asset_type: stablecoin-multi-chain
+asset_type: fiat-backed-stablecoin
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-ars: 4.6
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 4.1
 criteria:
-  a1: 5
+  a1: 4
   a2: 4
-  a3: 6
-  a4: 4
+  a3: 4
+  a4: 5
   a5: 3

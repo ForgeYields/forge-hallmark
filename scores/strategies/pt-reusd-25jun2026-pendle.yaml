@@ -1,22 +1,22 @@
-# yaml-language-server: $schema=../../schemas/strategie.schema.json
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
 name: PT-reUSD-25JUN2026 Pendle (buy-and-hold)
 slug: pt-reusd-25jun2026-pendle
 chain: ethereum
-strategy_type: 2B
+strategy_type: 2C
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 4.6
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 5.78
 components:
-  protocol_risk: 6.23
-  asset_risk: 4.55
-  strategy_specific_risk: 3.2
+  protocol_risk: 6.32
+  asset_risk: 5.15
+  strategy_specific_risk: 5.7
 strategy_specific_criteria:
-  s1: 2
-  s2: 3
-  s3: 5
-  s4: 4
+  s1: 6
+  s2: 8
+  s3: 2
+  s4: 5
 dependencies:
   chains:
     - ethereum

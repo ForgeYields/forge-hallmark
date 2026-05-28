@@ -1,17 +1,17 @@
-# yaml-language-server: $schema=../../schemas/strategie.schema.json
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
 name: RLUSD/USDC Curve LP (factory-stable-ng-327)
 slug: rlusd-usdc-curve-lp
 chain: ethereum
 strategy_type: 2A
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 3.87
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 3.60
 components:
-  protocol_risk: 6.81
-  asset_risk: 3.07
-  strategy_specific_risk: 1.8
+  protocol_risk: 6.20
+  asset_risk: 2.85
+  strategy_specific_risk: 1.80
 strategy_specific_criteria:
   s1: 1
   s2: 2
@@ -24,5 +24,5 @@ dependencies:
     - curve-finance
     - convex-finance
   assets:
-    - usdc
     - rlusd
+    - usdc

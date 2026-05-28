@@ -7,12 +7,12 @@ vault_target: fyWBTC
 addresses:
   market: '0x065a23437e336dc0b8c6f1752486569b74f0c5ca0f39d26cff258f8e16724f0f'
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 5.91
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 6.03
 components:
-  protocol_risk: 6.5
-  asset_risk: 6.77
+  protocol_risk: 6.90
+  asset_risk: 6.69
   strategy_specific_risk: 4.85
 strategy_specific_criteria:
   s1: 4

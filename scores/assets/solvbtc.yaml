@@ -3,13 +3,24 @@ symbol: SolvBTC
 slug: solvbtc
 chains:
   - ethereum
+  - bsc
+  - arbitrum
+  - base
+  - avalanche
+  - solana
+  - mantle
+  - merlin
+  - corn
+  - berachain
+  - rootstock
+  - tac
   - starknet
 issuer_protocol: solv-protocol
-asset_type: yield-bearing-btc-wrapper
+asset_type: bridged-btc
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-ars: 5.5
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 5.50
 criteria:
   a1: 5
   a2: 4

@@ -5,7 +5,7 @@ category: l1-chain
 vm_type: evm
 assessment:
   date: '2026-05-18'
-  methodology_version: v4.0
+  methodology_version: v4.3
 crs: 6.35
 criteria:
   n1: 7

@@ -6,8 +6,8 @@ chains:
 issuer_protocol: circle-internet-financial
 asset_type: fiat-backed-stablecoin
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
+  date: '2026-05-22'
+  methodology_version: v4.3
 ars: 2.5
 criteria:
   a1: 2

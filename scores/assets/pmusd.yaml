@@ -6,12 +6,36 @@ chains:
 issuer_protocol: raac-pmusd
 asset_type: yield-bearing-rwa-stablecoin
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-ars: 8.3
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 9.0
 criteria:
-  a1: 8
-  a2: 9
-  a3: 7
+  a1: 9
+  a2: 10
+  a3: 8
   a4: 9
   a5: 9
+# v4.3 re-assessment (data refresh 2026-05-27). Supersedes 2026-04-21 v3.4 (ARS 8.30).
+# TRIPLE HARD CAP — EXCLUDED via three independent channels:
+#   1) L1 issuer raac-pmusd EXCLUDED (PRS 6.19, C3=9 — 2/3 anon Safe, zero timelock)
+#   2) A2 = 10 (catastrophic depeg: intraday $0.2054 / -79.46% on 2026-05-04;
+#      daily close $0.5191 / -48.09% on 2026-05-05; sustained -10 to -15% for
+#      22+ days through 2026-05-27 at $0.8497)
+#   3) ARS 9.00 >> v3.7 ARS hard cap 6.5 (and far above WATCHLIST band 6.0-6.5)
+# - A1 = 9 (was 8): mechanism failure realized, not theoretical. xPM absorber
+#   did not protect against 80% intraday drop; no par-exit observed in stress.
+# - A2 = 10 (was 9): triple-disjunct Band 9-10 satisfied at extreme magnitudes
+#   (max dev > 15%, duration > 7 days, sustained loss of peg).
+# - A3 = 8 (was 7): aggregate pool TVL collapsed $72.8M -> $29.6M (-59%);
+#   unique pmUSD-side $17M -> $6.5M (-62%); Ethplorer 24h vol $0; single-venue
+#   Curve dependency. No v3.7 async exit credit (no par-redemption + L1 EXCLUDED).
+# - A4 = 9 (unchanged): RWA override + v3.10 Class C overlay; I-ON Digital
+#   going-concern persists per NT 10-K (2026-03-31) + new ICFR material
+#   weaknesses; unmined gold custody at mine operators (not regulated vault);
+#   Chainlink PoR feed still not in public registry.
+# - A5 = 9 (unchanged): top EOA grew 65.12% -> 67.07% during depeg (did not
+#   exit); top 6 = 94.43%; mcap ~$85.1M (sub-$100M); concentration vs. $6.5M
+#   unique pmUSD-side Curve liquidity = ~10:1 mismatch.
+# - Section 5 Rule 3: ARS > 6.5 -> 0% max allocation per vault.
+# - fyUSDC wind-down (initiated 2026-04-21) — verify completion; any residual
+#   must be liquidated immediately.

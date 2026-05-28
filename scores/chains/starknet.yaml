@@ -5,7 +5,7 @@ category: l2-rollup-zk
 vm_type: cairo
 assessment:
   date: '2026-05-18'
-  methodology_version: v4.0
+  methodology_version: v4.3
 crs: 5.5
 criteria:
   n1: 6  # Consensus & Decentralization — SHARP prover (S-two open-source, live on mainnet); staking phases 1-2 live, phase 3 (S-two into SHARP) and phase 4 (validator consensus participation) in transition; rubric explicitly cites Starknet in band 5-6 ("zk-L2 with prover decentralization in progress")

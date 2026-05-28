@@ -8,12 +8,12 @@ addresses:
   vault: '0xe883426B4fc84A7f5cc86415CAbBef43E73a4CC8'
   underlying: '0x2Ae3F1Ec7F1F5012CFEab0185bFc7aA3cf0DEc22'
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.1
-grs: 6.07
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 5.97
 components:
-  protocol_risk: 7.12
-  asset_risk: 4.10
+  protocol_risk: 6.41
+  asset_risk: 4.35
   strategy_specific_risk: 6.60
 strategy_specific_criteria:
   x1: 5

@@ -4,14 +4,14 @@ slug: jrusde
 chains:
   - ethereum
 issuer_protocol: strata
-asset_type: junior-tranche-stable
+asset_type: tranche-token
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
-ars: 6.75
+  date: '2026-05-22'
+  methodology_version: v4.3
+ars: 7.15
 criteria:
   a1: 7
   a2: 5
   a3: 8
-  a4: 7
+  a4: 9
   a5: 7

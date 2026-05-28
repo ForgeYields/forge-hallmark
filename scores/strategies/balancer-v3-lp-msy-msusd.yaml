@@ -5,12 +5,12 @@ chain: ethereum
 strategy_type: 2A
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 6.57
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 6.49
 components:
-  protocol_risk: 7.76
-  asset_risk: 5.75
+  protocol_risk: 7.71
+  asset_risk: 5.48
   strategy_specific_risk: 6.05
 strategy_specific_criteria:
   s1: 5

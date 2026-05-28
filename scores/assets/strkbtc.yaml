@@ -6,8 +6,8 @@ chains:
 issuer_protocol: strkbtc-federation
 asset_type: federated-wrapped-btc
 assessment:
-  date: '2026-05-18'
-  methodology_version: v3.10
+  date: '2026-05-22'
+  methodology_version: v4.3
 ars: 7.15
 criteria:
   a1: 6

@@ -9,18 +9,18 @@ addresses:
   pt: '0x1d69402390657308c91179aa184bf992908c1e08'
   underlying: '0x23238f20b894f29041f48d88ee91131c395aaa71'
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 5.49
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 4.14
 components:
-  protocol_risk: 7.64
+  protocol_risk: 3.44
   asset_risk: 4.4
-  strategy_specific_risk: 4.3
+  strategy_specific_risk: 4.6
 strategy_specific_criteria:
   s1: 4
-  s2: 3
-  s3: 4
-  s4: 4
+  s2: 5
+  s3: 6
+  s4: 3
 dependencies:
   chains:
     - ethereum

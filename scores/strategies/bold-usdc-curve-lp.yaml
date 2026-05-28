@@ -1,16 +1,16 @@
-# yaml-language-server: $schema=../../schemas/strategie.schema.json
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
 name: BOLD/USDC Curve LP (factory-stable-ng-455)
 slug: bold-usdc-curve-lp
 chain: ethereum
 strategy_type: 2A
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 4.45
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 4.12
 components:
-  protocol_risk: 6.81
-  asset_risk: 3.86
+  protocol_risk: 6.20
+  asset_risk: 3.42
   strategy_specific_risk: 2.75
 strategy_specific_criteria:
   s1: 2

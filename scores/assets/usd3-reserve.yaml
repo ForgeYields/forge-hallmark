@@ -1,17 +1,18 @@
 # yaml-language-server: $schema=../../schemas/asset.schema.json
-symbol: sUSDe
-slug: susde
+symbol: USD3
+slug: usd3-reserve
 chains:
   - ethereum
-issuer_protocol: ethena
-asset_type: yield-bearing-stablecoin-wrapper
+  - base
+issuer_protocol: reserve-protocol
+asset_type: rtoken-nav-accrual-stable
 assessment:
   date: '2026-05-22'
   methodology_version: v4.3
-ars: 4.35
+ars: 5.5
 criteria:
-  a1: 6
+  a1: 4
   a2: 4
-  a3: 3
-  a4: 5
-  a5: 4
+  a3: 8
+  a4: 4
+  a5: 9

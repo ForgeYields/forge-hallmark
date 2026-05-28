@@ -1,28 +1,27 @@
-# yaml-language-server: $schema=../../schemas/strategie.schema.json
-name: Steakhouse Prime ETH (Monad)
+# yaml-language-server: $schema=../../schemas/strategy.schema.json
+name: Steakhouse Prime ETH
 slug: steakhouse-prime-eth
-chain: monad
-strategy_type: '3'
+chain: ethereum
+strategy_type: W
 vault_target: fyETH
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 5.3
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 2.63
 components:
-  protocol_risk: 6.73
-  asset_risk: 5.15
-  strategy_specific_risk: 4.15
+  protocol_risk: 2.45
+  asset_risk: 1.00
+  strategy_specific_risk: 3.80
 strategy_specific_criteria:
-  s1: 1
-  s2: 6
-  s3: 5
-  s4: 7
-  s5: 3
+  x1: 4
+  x2: 3
+  x3: 3
+  x4: 4
+  x5: 7
 dependencies:
   chains:
-    - monad
+    - ethereum
   protocols:
-    - morpho-blue
+    - morpho-vaults-metamorpho
   assets:
-    - weth-monad
-    - wsteth-monad
+    - weth

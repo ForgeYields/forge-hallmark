@@ -5,26 +5,23 @@ chain: ethereum
 strategy_type: W
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.1
-grs: 3.63
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 2.96
 components:
-  protocol_risk: 2.2
-  asset_risk: 4.4
-  strategy_specific_risk: 4.40
+  protocol_risk: 2.45
+  asset_risk: 2.50
+  strategy_specific_risk: 3.70
 strategy_specific_criteria:
-  x1: 4
+  x1: 3
   x2: 5
-  x3: 4
-  x4: 4
-  x5: 5
+  x3: 3
+  x4: 3
+  x5: 4
 dependencies:
   chains:
     - ethereum
   protocols:
-    - morpho-blue
+    - morpho-vaults-metamorpho
   assets:
-    - eusd
-    - wbtc
-    - eth-plus
-    - wsteth
+    - usdc

@@ -5,12 +5,12 @@ chain: monad
 strategy_type: '3'
 vault_target: fyUSDC
 assessment:
-  date: 2026-05-18
-  methodology_version: v4.0
-grs: 5.89
+  date: '2026-05-22'
+  methodology_version: v4.3
+grs: 6.10
 components:
-  protocol_risk: 7.9
-  asset_risk: 5.05
+  protocol_risk: 8.05
+  asset_risk: 5.70
   strategy_specific_risk: 4.65
 strategy_specific_criteria:
   s1: 4

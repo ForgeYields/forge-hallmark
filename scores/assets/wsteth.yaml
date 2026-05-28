@@ -6,8 +6,8 @@ chains:
 issuer_protocol: lido
 asset_type: liquid-staking-token-lst-wrapper
 assessment:
-  date: '2026-04-21'
-  methodology_version: v3.4
+  date: '2026-05-22'
+  methodology_version: v4.3
 ars: 3.2
 criteria:
   a1: 3
